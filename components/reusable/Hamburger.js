@@ -11,7 +11,7 @@ import {
   handleCityReturn,
   handleCity,
   staggerRevealClose,
-} from "./Animations";
+} from "./animations.js";
 
 const cities = [
   { name: "Fashion", image: "/JUNO.png" },
