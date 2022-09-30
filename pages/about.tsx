@@ -43,7 +43,9 @@ const About: NextPage = () => {
           ))}
         </div>
         <p>Debox at a glance </p>
-        <p>Debox is pronounced as De box and stands for 'Out of the box'.</p>
+        <p>
+          {"Debox is pronounced as De box and stands for 'Out of the box'."}
+        </p>
       </div>
       {/* Story */}
       <section className="relative container">
@@ -89,11 +91,11 @@ const About: NextPage = () => {
             </div>
             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
               <div className="relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
-                <img
+                {/* <img
                   className="absolute inset-0 h-full w-full object-cover"
                   src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
-                />
+                /> */}
                 <div className="absolute inset-0 bg-accent/20  " />
                 <div className="absolute inset-0 bg-gradient-to-t from-accent/40 via-accent/10" />
               </div>
@@ -106,12 +108,9 @@ const About: NextPage = () => {
               <Heading>Our Story</Heading>
               <div className="mt-6 text-black space-y-6">
                 <p className="">
-                  From redesigning and successful deployment of the Supply Chain
-                  process for Nippo Batteries to designing and developing
-                  India's first true hyperlocal job and Talent search platform,
-                  Debox has come a long way in solving business and real-life
-                  problems through their logical reasoning and innovative
-                  thinking.
+                  {
+                    "From redesigning and successful deployment of the Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal job and Talent search platform, Debox come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
+                  }
                 </p>
                 {/* <p className="text-base leading-7">
                   Sollicitudin tristique eros erat odio sed vitae, consequat
@@ -130,12 +129,9 @@ const About: NextPage = () => {
       <section className="container text-center space-y-10 mx-auto max-w-5xl">
         <Heading>Who we are</Heading>
         <p className="leading-relaxed">
-          Every member of Debox comes from different educational backgrounds and
-          a variety of experiences encompassing entrepreneurship, human
-          resources, marketing, finance, design, commerce, and technology. Our
-          members have worked across companies of various sizes across
-          industries and have gained knowledge and expertise in driving change
-          and building higher-performance organizations and cultures.
+          {
+            "Every member of Debox comes from different educational backgrounds and a variety of experiences encompassing entrepreneurship, human resources, marketing, finance, design, commerce, and technology. Our members have worked across companies of various sizes across industries and have gained knowledge and expertise in driving change and building higher-performance organizations and cultures."
+          }
         </p>
       </section>
       {/* Framework */}
@@ -162,15 +158,9 @@ const About: NextPage = () => {
       <section className="container text-center space-y-10 mx-auto max-w-5xl">
         <Heading>How we work</Heading>
         <p>
-          We design solutions by keeping people at the core whilst ensuring the
-          business objective are fulfilled. We deep into the problem/opportunity
-          at hand and understand the psychological barriers to achieving success
-          or psychological levers that can be leveraged to gain success. Our
-          solutions are designed by keeping a balance of both the barriers and
-          the levers. We take pride in not only designing solutions and
-          blueprints but also driving the solutions to success. We don't stop
-          there, we ensure the solutions are sustained through structured
-          knowledge transfer or by leveraging technology and automation.
+          {
+            " We design solutions by keeping people at the core whilst ensuring the business objective are fulfilled. We deep into the problem/opportunity at hand and understand the psychological barriers to achieving success or psychological levers that can be leveraged to gain success. Our solutions are designed by keeping a balance of both the barriers and the levers. We take pride in not only designing solutions and blueprints but also driving the solutions to success. We don't stop there, we ensure the solutions are sustained through structured knowledge transfer or by leveraging technology and automation."
+          }
         </p>
       </section>
 
@@ -178,9 +168,9 @@ const About: NextPage = () => {
         <section className="container text-center space-y-10 mx-auto max-w-5xl">
           <Heading>Explore our work</Heading>
           <p>
-            We love working on complex business challenges, see{" "}
-            <Link href="/case-studies">the problem statements</Link> we’re
-            tackling now or explore some of our recent work below
+            {"We love working on complex business challenges, see"}
+            <Link href="/case-studies">the problem statements</Link>
+            {"we’re tackling now or explore some of our recent work below"}
           </p>
         </section>
       </section>

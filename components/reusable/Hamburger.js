@@ -102,12 +102,9 @@ const Hamburger = ({ state }) => {
               <div ref={(el) => (info = el)} className="info text-2xl">
                 <h3>Our Story</h3>
                 <p>
-                  From redesigning and successful deployment of the Supply Chain
-                  process for Nippo Batteries to designing and developing
-                  India's first true hyperlocal job and Talent search platform,
-                  Debox has come a long way in solving business and real-life
-                  problems through their logical reasoning and innovative
-                  thinking.
+                  {
+                    "From redesigning and successful deployment of the Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
+                  }
                 </p>
               </div>
             </div>
