@@ -89,16 +89,17 @@ function Index() {
               </div>
             </div>
           </div>
-
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
-            {/* Content area */}
-            <div className="pt-12 sm:pt-16 lg:pt-10">
-              <Heading>About the Client</Heading>
-              <div className="mt-6 text-black space-y-6 text-justify">
-                {post.about()}
+          {/* About the Client */}
+          {typeof post.about !== "undefined" && (
+            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+              <div className="pt-12 sm:pt-16 lg:pt-10">
+                <Heading>About the Client</Heading>
+                <div className="mt-6 text-black space-y-6 text-justify">
+                  {post.about()}
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
       {/* Image Break */}
@@ -202,22 +203,28 @@ function Index() {
 
       {/* Work Done */}
 
-      <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
-        <Heading>Work Done</Heading>
-        {post.workDone()}
-      </div>
-
+      {typeof post.workDone !== "undefined" && (
+        <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
+          <Heading>Work Done</Heading>
+          {post.workDone()}
+        </div>
+      )}
       {/* Outcome */}
+      {typeof post.outcome !== "undefined" && (
+        <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
+          <Heading>Outcome</Heading>
+          {post.outcome()}
+        </div>
+      )}
 
-      <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
-        <Heading>Outcome</Heading>
-        {post.outcome()}
-      </div>
-      {/* Learnings */}
-      <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
-        <Heading>Framework and Learnings</Heading>
-        {post.framework()}
-      </div>
+      {/*Framework / Learnings */}
+      {typeof post.framework !== "undefined" && (
+        <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
+          <Heading>Framework and Learnings</Heading>
+          {post.framework()}
+        </div>
+      )}
+
       {/* Testimonials */}
       {post.testimonials &&
         post.testimonials?.length > 0 &&
