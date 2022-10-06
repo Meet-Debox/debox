@@ -114,9 +114,9 @@ function ClientCarousel() {
         }}
         className=""
       >
-        {clients.map((img: any, idx: any) => (
+        {clients.map((img: any) => (
           <SwiperSlide
-            key={idx}
+            key={img}
             className="self-center flex justify-center items-center"
           >
             <div className="w-40 p-4">

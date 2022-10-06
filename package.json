@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@u-wave/react-vimeo": "^0.9.8",
+    "aos": "^2.3.4",
     "autoprefixer": "^10.4.12",
     "clsx": "^1.2.1",
     "gsap": "^3.11.2",
@@ -20,6 +21,7 @@
     "postcss": "^8.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-horizontal-scrolling-menu": "^3.2.0",
     "react-rotating-text": "^1.4.1",
     "react-youtube-background": "^1.0.0",
     "sass": "^1.55.0",
@@ -27,6 +29,7 @@
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/node": "18.7.23",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",

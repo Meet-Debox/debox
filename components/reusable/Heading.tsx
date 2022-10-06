@@ -6,7 +6,7 @@ type HeadingProps = {
 
 function Heading({ children }: HeadingProps) {
   return (
-    <h2 className="text-3xl text-black font-extrabold tracking-tight sm:text-4xl">
+    <h2 className="text-3xl text-black font-extrabold tracking-tight sm:text-4xl font-heading group">
       {children}
     </h2>
   );

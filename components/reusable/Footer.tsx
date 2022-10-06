@@ -3,13 +3,36 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="cont bg-accent text-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="relative bg-darkBlue">
+      {/* <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1920 1117"
+        className="absolute bottom-20 left-0  -z-10 h-[120%] w-[vw]"
+      >
+        <defs></defs>
+        <g
+          id="Mask_Group_23"
+          data-name="Mask Group 23"
+          transform="translate(0 -5725)"
+          clip-path="url(#clip-path)"
+        >
+          <path
+            id="Path_18"
+            data-name="Path 18"
+            d="M-83.585,6913.693S95.253,5763.89,1035.391,5843.566s1351.951,531.348,1351.951,531.348L3156.3,7067.859Z"
+            transform="translate(-623.448 -51.935) rotate(-3)"
+            fill="#1113C2"
+          />
+        </g>
+      </svg> */}
+
+      <div className="max-w-7xl mx-auto cont text-white">
         <hr />
         <div className="flex flex-col md:flex-row justify-between px-8 items-center py-8 gap-4 md:gap-10">
-          <div className="md:w-1/4">
+          <div className="md:w-1/4 space-y-4">
             <svg
-              className="w-48 h-14 md:w-72 md:h-28 group cursor-pointer"
+              className="w-48 h-14 md:w-72 md:h-28 group cursor-pointer mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 523.803 120.605"
             >
@@ -79,7 +102,7 @@ function Footer() {
               </g>
             </svg>
             <div className="flex items-center gap-3">
-              <span className="text-lg">Follow Us On:</span>
+              <span className="text-lg pt-0.5">Follow Us On:</span>
               <a href="https://www.instagram.com/deboxmarketing">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,19 +137,30 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="md:w-3/4 flex justify-start items-start gap-4 text-base">
-            <div className="w-1/2 space-y-4">
+          <div className="md:w-3/4 flex flex-col md:flex-row justify-start items-start gap-4 text-base">
+            <div className="md:w-1/2 space-y-4">
               <div className="text-xl font-bold">OUR ADDRESS</div>
               <div>
                 1014, Lodha Supremus - Tower B Lodha Business District, 2,
                 Kolshet Rd, Thane, Maharashtra 400607
               </div>
             </div>
-            <div className="w-1/2 space-y-4">
+            <div className="md:w-1/2 space-y-4">
               <div className="text-xl font-bold">OUR CONTACT</div>
               <div>
-                India: +91 9920969961 USA: +1 404 731 6010 Email:
-                darshan@debox.co.in
+                <p className="md:space-x-4">
+                  <span className="">
+                    India: <a href="tel:+919920969961">+91 9920969961</a>
+                  </span>
+                  <span className="block md:inline">
+                    {" "}
+                    USA: <a href="tel:+1 404 731 6010">+1 404 731 6010</a>
+                  </span>
+                </p>
+                <p>
+                  Email:{" "}
+                  <a href="mailto:darshan@debox.co.in">darshan@debox.co.in</a>
+                </p>
               </div>
             </div>
           </div>

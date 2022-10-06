@@ -1,15 +1,24 @@
 import React from "react";
 
-function SurveyCTAStrip() {
+function SurveyCTAStrip({ isDark = false }: { isDark?: boolean }) {
   return (
-    <div className="bg-darkBlue text-white">
+    <div className={`${isDark && "bg-accent text-white"}`}>
       <div className="max-w-5xl text-center w-11/12 cont mx-auto font-bold">
         <div className="">
-          Check where your company stands on our Growth and Culture
-          Sustainability Framework
+          <p>Check where your company stands</p>
+          <p>
+            on our{" "}
+            <span className={`px-1 py-1 ${isDark ? "" : "bg-accent"}`}>
+              Growth and Culture Sustainability Framework
+            </span>
+          </p>
         </div>
         <div className="flex flex-col justify-center items-center pt-6 gap-2 group w-fit mx-auto cursor-pointer">
-          <h4 className="text-teal-50 group-hover:text-accent duration-200 transition-colors">
+          <h4
+            className={`${
+              isDark ? "group-hover:text-darkBlue" : "group-hover:text-primary"
+            } duration-200 transition-colors`}
+          >
             Start Now
           </h4>
           <div>
@@ -19,7 +28,11 @@ function SurveyCTAStrip() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 group-hover:text-accent duration-200 transition-colors animate-bounce"
+              className={`w-6 h-6 ${
+                isDark
+                  ? "group-hover:text-darkBlue"
+                  : "group-hover:text-primary"
+              } duration-200 transition-colors animate-bounce`}
             >
               <path
                 strokeLinecap="round"

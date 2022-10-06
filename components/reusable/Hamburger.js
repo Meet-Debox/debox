@@ -14,15 +14,13 @@ import {
 } from "./animations.js";
 
 const cities = [
-  { name: "Fashion", image: "/JUNO.png" },
-  { name: "Food", image: "/JUNO.png" },
-  { name: "Logistics", image: "/JUNO.png" },
-  { name: "Gaming", image: "/JUNO.png" },
-  { name: "Pharma", image: "/JUNO.png" },
-  { name: "Music", image: "/JUNO.png" },
+  { name: "Fashion", image: "/CAI.png", route: "/our-work?category=Fashion" },
+  { name: "Food", image: "/JUNO.png", route: "/our-work?category=Food" },
+  { name: "Gaming", image: "/KHEL.jpg", route: "/our-work?category=Gaming" },
+  { name: "More", image: "", route: "/our-work" },
 ];
 
-const Hamburger = ({ state }) => {
+const Hamburger = ({ state, handleMenu }) => {
   // Create varibles of our dom nodes
   let menuLayer = useRef(null);
   let reveal1 = useRef(null);
@@ -34,7 +32,6 @@ const Hamburger = ({ state }) => {
   let info = useRef(null);
 
   useEffect(() => {
-    // If the menu is open and we click the menu button to close it.
     if (state.clicked === false) {
       // If menu is closed and we want to open it.
 
@@ -79,23 +76,26 @@ const Hamburger = ({ state }) => {
                     onMouseEnter={(e) => handleHover(e)}
                     onMouseOut={(e) => handleHoverExit(e)}
                     ref={(el) => (line1 = el)}
+                    onClick={() => handleMenu()}
                   >
-                    <Link href="/opportunities">Home</Link>
+                    <Link href="/">Home</Link>
                   </li>
 
                   <li
                     onMouseEnter={(e) => handleHover(e)}
                     onMouseOut={(e) => handleHoverExit(e)}
                     ref={(el) => (line2 = el)}
+                    onClick={() => handleMenu()}
                   >
-                    <Link href="/solutions">Our Work</Link>
+                    <Link href="/our-work">Our Work</Link>
                   </li>
                   <li
                     onMouseEnter={(e) => handleHover(e)}
                     onMouseOut={(e) => handleHoverExit(e)}
                     ref={(el) => (line3 = el)}
+                    onClick={() => handleMenu()}
                   >
-                    <Link href="/contact-us">About Us</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                 </ul>
               </nav>
@@ -116,8 +116,18 @@ const Hamburger = ({ state }) => {
                   key={el.name}
                   onMouseEnter={() => handleCity(el.image, cityBackground)}
                   onMouseOut={() => handleCityReturn(cityBackground)}
+                  onClick={() => {
+                    handleMenu();
+                  }}
                 >
-                  {el.name}
+                  <Link
+                    href={{
+                      pathname: "our-work",
+                      query: { category: el.name },
+                    }}
+                  >
+                    {el.name}
+                  </Link>
                 </span>
               ))}
             </div>

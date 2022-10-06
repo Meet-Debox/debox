@@ -15,7 +15,7 @@ function BgVid() {
                 driving{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary/80 to-primary">
                   <ReactRotatingText
-                    items={["growth.", "sustainability.", "culture."]}
+                    items={["Growth.", "Sustainability.", "Culture."]}
                   />
                 </span>
               </div>

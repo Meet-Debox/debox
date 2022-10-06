@@ -218,7 +218,7 @@ const Header = ({ history }) => {
           </div>
         </div>
       </div>
-      <Hamburger state={state} />
+      <Hamburger state={state} handleMenu={handleMenu} />
     </header>
   );
 };
