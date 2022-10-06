@@ -60,6 +60,7 @@ const OurWork: NextPage = () => {
           {filteredStudies.map((study, idx) => (
             // to change key to title later
             <CaseCard
+              key={study.title}
               client={study.client}
               idx={idx}
               img={study.img}

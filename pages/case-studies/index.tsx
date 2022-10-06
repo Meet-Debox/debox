@@ -12,8 +12,8 @@ import CaseCard from "../../components/reusable/CaseCard";
 
 const post = main[0];
 
-function index() {
-  useEffect(() => {}, []);
+function Index() {
+  // useEffect(() => {}, []);
 
   return (
     <div className="">
@@ -222,7 +222,10 @@ function index() {
       {post.testimonials &&
         post.testimonials?.length > 0 &&
         post.testimonials.map((el) => (
-          <div className="cont max-w-5xl mx-auto space-y-8 text-center">
+          <div
+            key={el.by}
+            className="cont max-w-5xl mx-auto space-y-8 text-center"
+          >
             <Heading>Testimonials</Heading>
             <div className="italic">{el.content}</div>
 
@@ -254,6 +257,7 @@ function index() {
             .slice(0, 3)
             .map((study, idx) => (
               <CaseCard
+                key={study.title}
                 client={study.client}
                 idx={idx}
                 img={study.img}
@@ -268,4 +272,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
