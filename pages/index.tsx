@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       {/* Case Studies */}
       <div className="bg-light relative">
         <svg
-          className="absolute left-[75%] h-24 w-20 -mt-11"
+          className="absolute left-[75%] h-24 w-20 -mt-11 z-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 117.253 160.104"
         >

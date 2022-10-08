@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+$darkBlue: #1113c2;
+$body: #fef3c7;
+$stroke: #111827;
+$shadow: #ff2036;
+$accent: #04cdec;
+
 @font-face {
   font-family: "Altone";
   src: url("../public/fonts/altone-trial.regular.ttf");
@@ -71,8 +77,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 // #EADEDA
-$red: #1113c2;
-$black: #00cdec;
+
+// $black: #00cdec;
 
 .container {
   width: 100%;
@@ -139,7 +145,7 @@ header {
     height: 100%;
     width: 100%;
     .menu-secondary-background-color {
-      background: $red;
+      background: $darkBlue;
       top: 0;
       left: 0;
       right: 0;
@@ -201,18 +207,18 @@ header {
                 font-weight: 700;
                 font-weight: bolder;
                 cursor: pointer;
-                height: 50px;
+                // height: 50px;
                 // overflow: hidden;
                 position: relative;
                 max-width: 700px;
-                width: 100%;
+                width: fit-content;
+                &:hover {
+                  color: $darkBlue;
+                }
                 a {
                   position: absolute;
                   color: black;
                   text-decoration: none;
-                  &:hover {
-                    color: $red;
-                  }
                 }
               }
               @media screen and (min-width: 768px) {
@@ -270,7 +276,7 @@ header {
             transition: 0.3s ease-in-out;
             &:hover {
               color: white;
-              background: $red;
+              background: $darkBlue;
               padding: 8px 24px;
               border-radius: 4px;
             }
@@ -299,9 +305,154 @@ header {
   }
 }
 
-// Swiper JS
+// Swiper JS Smooth Scroll
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
+}
+
+// Offset Headers
+
+// 04CDEC
+$halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==");
+
+@mixin stroke-width($property) {
+  -webkit-text-stroke-width: $property;
+  -moz-text-stroke-width: $property;
+}
+
+@mixin stroke-color($property) {
+  -webkit-text-stroke-color: $property;
+  -moz-text-stroke-color: $property;
+}
+
+@mixin background-clip($property) {
+  -webkit-background-clip: $property;
+  -moz-background-clip: $property;
+  background-clip: $property;
+}
+
+@mixin fill-color($property) {
+  -webkit-text-fill-color: $property;
+  -moz-text-fill-color: $property;
+}
+
+.stroke {
+  @include stroke-width(2px);
+  @include stroke-color($stroke);
+  color: transparent;
+}
+
+.shadow {
+  text-shadow: 6px 6px $shadow;
+}
+
+.stroke-shadow {
+  font-size: 15vw;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin: 0;
+  color: $body;
+  text-shadow: -2px 0 $stroke, 0 -2px $stroke, 2px 0 $stroke, 0 2px $stroke,
+    2px 2px $stroke, -2px -2px $stroke, -2px 2px $stroke, 2px -2px $stroke,
+    6px 6px $shadow;
+}
+
+.halftone {
+  position: relative;
+  width: fit-content;
+  z-index: 2;
+
+  &:after {
+    // content: "Hello";
+    background: $halftone repeat;
+    // width: 100%;
+    // letter-spacing: 6px;
+    // left: 220px;
+    left: calc(34.5% + 6px);
+    // right: 0;
+    // margin: 0 auto;
+    position: absolute;
+    opacity: 0.9;
+    top: calc(40% + 6px);
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    @include stroke-width(0);
+    @include background-clip(text);
+    @include fill-color(transparent);
+  }
+}
+
+.halftone-color {
+  &:after {
+    background-color: $shadow;
+  }
+}
+
+// Blog Page -> BG IMG
+.blog-wide-img {
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(0.78, 0.78);
+}
+
+:root {
+  --bg-color-hsl: 59, 3%, 94%;
+  --bg-color: hsl(var(--bg-color-hsl));
+  --bg-color-translucent: hsla(var(--bg-color-hsl), 0.95);
+  --bg-color-highlight: #04cdec72;
+  --color-text: white;
+  --color-text-highlight: black;
+  --page-width: 80ch;
+  --paragraph-font-size: min(max(1.2rem, 4vw), 1.4rem);
+  --header-font-size: min(max(2rem, 8vw), 4rem);
+  --space: 2rem;
+  --padding: 8vmin;
+  --duration: 1.8s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.text-highlight {
+  all: unset;
+  // display: block;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: color calc(var(--duration) / 4) var(--ease),
+    background-color calc(var(--duration) / 4) var(--ease),
+    background-size var(--duration) var(--ease);
+
+  &:hover {
+    color: var(--color-text-highlight);
+    background-size: 100% 100%;
+  }
+
+  & {
+    background-image: linear-gradient(
+      var(--bg-color-highlight),
+      var(--bg-color-highlight)
+    );
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  &::before {
+    content: " [highlight start] ";
+  }
+
+  &::after {
+    content: " [highlight end] ";
+  }
 }

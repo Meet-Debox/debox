@@ -13,11 +13,23 @@ import {
   staggerRevealClose,
 } from "./animations.js";
 
-const cities = [
-  { name: "Fashion", image: "/CAI.png", route: "/our-work?category=Fashion" },
-  { name: "Food", image: "/JUNO.png", route: "/our-work?category=Food" },
-  { name: "Gaming", image: "/KHEL.jpg", route: "/our-work?category=Gaming" },
-  { name: "More", image: "", route: "/our-work" },
+const industries = [
+  {
+    name: "Fashion",
+    image: "/studies/CAI/CAI3.png",
+    route: "/case-studies?category=Fashion",
+  },
+  {
+    name: "Food",
+    image: "/studies/JUNO/JUNO.png",
+    route: "/case-studies?category=Food",
+  },
+  {
+    name: "Gaming",
+    image: "/studies/Khel/KHEL.jpg",
+    route: "/case-studies?category=Gaming",
+  },
+  { name: "More", image: "", route: "/case-studies" },
 ];
 
 const Hamburger = ({ state, handleMenu }) => {
@@ -30,6 +42,12 @@ const Hamburger = ({ state, handleMenu }) => {
   let line2 = useRef(null);
   let line3 = useRef(null);
   let info = useRef(null);
+
+  const navItems = [
+    { name: "Home", route: "/", line: line1 },
+    { name: "Our Work", route: "/case-studies", line: line2 },
+    { name: "About Us", route: "/about", line: line3 },
+  ];
 
   useEffect(() => {
     if (state.clicked === false) {
@@ -65,14 +83,27 @@ const Hamburger = ({ state, handleMenu }) => {
       <div ref={(el) => (reveal2 = el)} className="menu-layer">
         <div
           ref={(el) => (cityBackground = el)}
-          className="menu-city-background"
+          className="menu-city-background !bg-blend-luminosity"
         ></div>
         <div className="container">
           <div className="wrapper">
             <div className="menu-links">
               <nav>
                 <ul>
-                  <li
+                  {navItems.map((ni) => (
+                    <Link href={ni.route} key={ni.name}>
+                      <li
+                        onMouseEnter={(e) => handleHover(e)}
+                        onMouseOut={(e) => handleHoverExit(e)}
+                        ref={(el) => (ni.line = el)}
+                        onClick={() => handleMenu()}
+                      >
+                        {ni.name}
+                      </li>
+                    </Link>
+                  ))}
+
+                  {/* <li
                     onMouseEnter={(e) => handleHover(e)}
                     onMouseOut={(e) => handleHoverExit(e)}
                     ref={(el) => (line1 = el)}
@@ -87,7 +118,7 @@ const Hamburger = ({ state, handleMenu }) => {
                     ref={(el) => (line2 = el)}
                     onClick={() => handleMenu()}
                   >
-                    <Link href="/our-work">Our Work</Link>
+                    <Link href="/case-studies">Our Work</Link>
                   </li>
                   <li
                     onMouseEnter={(e) => handleHover(e)}
@@ -96,7 +127,7 @@ const Hamburger = ({ state, handleMenu }) => {
                     onClick={() => handleMenu()}
                   >
                     <Link href="/about">About Us</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
               <div ref={(el) => (info = el)} className="info text-2xl">
@@ -110,8 +141,7 @@ const Hamburger = ({ state, handleMenu }) => {
             </div>
             <div className="locations">
               Industries:
-              {/* Returning the list of cities */}
-              {cities.map((el) => (
+              {industries.map((el) => (
                 <span
                   key={el.name}
                   onMouseEnter={() => handleCity(el.image, cityBackground)}
@@ -122,7 +152,7 @@ const Hamburger = ({ state, handleMenu }) => {
                 >
                   <Link
                     href={{
-                      pathname: "our-work",
+                      pathname: "case-studies",
                       query: { category: el.name },
                     }}
                   >

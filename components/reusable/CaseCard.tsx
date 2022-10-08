@@ -41,9 +41,13 @@ function CaseCard({
       </div>
       <h5>{client}</h5>
       <Link href={route}>
-        <h4 className="font-heading font-bold cursor-pointer">{title}</h4>
+        <h4 className="font-heading font-bold cursor-pointer">
+          <span className="text-highlight">{title}</span>
+        </h4>
       </Link>
-      <TransBtn size="sm">{industry}</TransBtn>
+      <Link href={"/case-studies?category=" + industry}>
+        <TransBtn size="sm">{industry}</TransBtn>
+      </Link>
     </div>
   );
 }

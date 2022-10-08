@@ -3,16 +3,16 @@ import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import Button from "../components/reusable/Button";
-
+import Link from "next/link";
 import main from "./data/index";
 
 function CaseStudiesMain() {
   return (
-    <div className="max-w-5xl overflow-auto mx-auto cont !pt-28 w-11/12">
-      {main.map((study, idx) => (
+    <div className="max-w-5xl overflow-auto mx-auto cont !md:pt-28 w-11/12">
+      {main.slice(0, 3).map((study, idx) => (
         <div key={study.title} className={`py-8 `}>
           <div
-            className={`flex items-center justify-center flex-col md:flex-row gap-4 md:gap-8 w-full ${
+            className={`flex items-center justify-center flex-col md:flex-row gap-3 lg:gap-8 w-full ${
               idx % 2 === 0 && "md:flex-row-reverse"
             }`}
           >
@@ -38,8 +38,8 @@ function CaseStudiesMain() {
                 <div className="w-full h-full">
                   <Image
                     // width={500}
-                    width={589}
-                    height={674}
+                    // width={589}
+                    // height={674}
                     objectFit="contain"
                     className="w-full h-full object-contain object-center"
                     alt={study.client + "Consulted by Debox"}
@@ -49,10 +49,12 @@ function CaseStudiesMain() {
               </div>
             </div>
 
-            <div className=" md:w-1/2 text-lg md:text-2xl flex flex-col gap-12">
+            <div className=" md:w-1/2 text-lg md:text-2xl flex flex-col gap-4 sm:gap-7 md:gap-12">
               <h4>{study.client}</h4>
               <h4 className="font-heading font-bold">{study.title}</h4>
-              <Button>Read More</Button>
+              <Link href={study.route}>
+                <Button>Read More</Button>
+              </Link>
               <TransBtn size="sm">
                 <h4>{study.industry}</h4>
               </TransBtn>
