@@ -60,7 +60,7 @@ function CAI() {
       {/* About Client */}
       <section className="relative cont">
         <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-          <div className="relative sm:py-16 lg:py-0 lg:order-2">
+          <div className="relative sm:py-16 lg:py-0 lg:order-2 overflow-clip">
             <div
               aria-hidden="true"
               className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
@@ -138,7 +138,7 @@ function CAI() {
       <section className="cont max-w-7xl mx-auto w-11/12 space-y-10 grid md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 ">
         <Heading2
           title="Problem Statement"
-          className="after:content-['Problem_Statement'] after:w-full after:left-[9.15rem] after:top-[1.15rem] md:after:left-[19.8rem] md:after:top-24 md:text-center md:after:text-center"
+          className="after:content-['Problem_Statement'] after:left-[50%] after:top-[50%] md:text-center md:after:text-center"
         />
         <p className="text-justify">
           With the fast-paced growth, the founders (Dhanraj Minawala and
@@ -150,7 +150,7 @@ function CAI() {
       </section>
       {/* Timeline and Info */}
       <section className="relative cont bg-light">
-        <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+        <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overflow-clip mx-auto w-11/12">
           <div className="relative sm:py-16 lg:py-0 lg:order-0">
             <div
               aria-hidden="true"
@@ -206,7 +206,7 @@ function CAI() {
             </div>
           </div>
 
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 ">
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20 text-justify space-y-20 ">
               <div className="space-y-4">
@@ -268,7 +268,7 @@ function CAI() {
         <div className="max-w-7xl space-y-8 cont mx-auto w-11/12 md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2">
           <Heading2
             title="Outcome"
-            className="after:content-['Outcome'] after:overflow-clip after:left-[49.4%]"
+            className="after:content-['Outcome'] after:left-[49.4%]"
           />
           {post.outcome()}
         </div>

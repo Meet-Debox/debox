@@ -50,7 +50,7 @@ const CaseStudies: NextPage = () => {
         >
           {/* w-fit if not scrollable   */}
           {inds.map((cat) => (
-            <div className="">
+            <div key={cat} className="">
               <TransBtn
                 onClick={() => router.push("/case-studies?category=" + cat)}
                 active={category === cat}

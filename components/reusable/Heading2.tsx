@@ -12,7 +12,7 @@ function Heading({ title, className }: HeadingProps) {
     <div className="">
       <h2
         className={clsx(
-          "text-3xl text-black font-extrabold tracking-tight sm:text-8xl font-heading stroke halftone halftone-color after:text-3xl sm:after:text-8xl",
+          "text-5xl after:text-5xl lg:text-7xl lg:after:text-7xl after:w-full text-black font-extrabold tracking-tight font-heading stroke halftone halftone-color ",
           className
         )}
       >
