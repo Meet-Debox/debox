@@ -9,6 +9,7 @@ import Vimeo from "@u-wave/react-vimeo";
 import Button from "../components/reusable/Button";
 import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
 import ClientCarousel from "../components/reusable/ClientCarousel";
+import Arrow1 from "../components/reusable/Arrow1";
 import FooterBlob from "../components/reusable/FooterBlob";
 
 // import hero from '../public/hero-vid.mp4'
@@ -43,38 +44,7 @@ const Home: NextPage = () => {
       <Description />
       {/* Case Studies */}
       <div className="bg-light relative">
-        <svg
-          className="absolute left-[75%] h-24 w-20 -mt-11 z-10"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 117.253 160.104"
-        >
-          <g
-            id="Group_26"
-            data-name="Group 26"
-            transform="translate(-1360.582 -1825.131)"
-          >
-            <path
-              id="Path_13"
-              data-name="Path 13"
-              d="M0,0V37.783l37.96,8.989"
-              transform="translate(1400.755 1931.63) rotate(-3)"
-              fill="none"
-              stroke="#1d1d1d"
-              strokeLinecap="round"
-              strokeWidth="11"
-            />
-            <path
-              id="Path_14"
-              data-name="Path 14"
-              d="M1409.156,1969.72s49.55-37.224,58.541-67.358,17-98.215-99.828-44.87"
-              transform="translate(0 -7.068)"
-              fill="none"
-              stroke="#1d1d1d"
-              strokeLinecap="round"
-              strokeWidth="11"
-            />
-          </g>
-        </svg>
+        <Arrow1 className="absolute left-[75%] h-24 w-20 -mt-11 z-10" />
         <CaseStudiesMain />
       </div>
       <SurveyCTAStrip isDark />

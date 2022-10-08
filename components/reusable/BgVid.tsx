@@ -6,7 +6,7 @@ import YoutubeBackground from "react-youtube-background";
 function BgVid() {
   return (
     <div className="z-[-1] absolute top-0 left-0 h-screen w-[99.5vw]  bg-white/40">
-      <YoutubeBackground className="h-full w-full" videoId={"A3Jbge68Yb8"}>
+      <YoutubeBackground className="h-full w-full" videoId={"ncYEo1m7i2U"}>
         <div className="max-w-7xl mx-auto ">
           <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
             <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[60%]">

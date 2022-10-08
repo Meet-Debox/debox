@@ -1,6 +1,6 @@
 import React, { MutableRefObject } from "react";
 import { useRouter } from "next/router";
-import main from "../../components/data";
+import cai from "../../components/data/cai";
 import { useState, useEffect, useRef } from "react";
 import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import Image from "next/image";
@@ -11,12 +11,14 @@ import CaseCard from "../../components/reusable/CaseCard";
 import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
 import FrameworkCard from "../../components/reusable/FrameworkCard";
 import Heading2 from "../../components/reusable/Heading2";
+import main from "../../components/data";
+import Arrow1 from "../../components/reusable/Arrow1";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 function CAI() {
-  const post = main[0];
+  const post = cai;
 
   const imgArray: Array<any> = [useRef(null), useRef(null)];
   gsap.registerPlugin(ScrollTrigger);
@@ -136,7 +138,7 @@ function CAI() {
       <section className="cont max-w-7xl mx-auto w-11/12 space-y-10 grid md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 ">
         <Heading2
           title="Problem Statement"
-          className="after:content-['Problem_Statement'] after:left-[19.8rem] after:top-24 text-center after:text-center"
+          className="after:content-['Problem_Statement'] after:w-full after:left-[9.15rem] after:top-[1.15rem] md:after:left-[19.8rem] md:after:top-24 md:text-center md:after:text-center"
         />
         <p className="text-justify">
           With the fast-paced growth, the founders (Dhanraj Minawala and
@@ -222,7 +224,7 @@ function CAI() {
 
       {/* Approach and findings */}
       {typeof post.approachFindings !== "undefined" && (
-        <section className="max-w-7xl cont max-w-11/12 mx-auto">
+        <section className="max-w-7xl cont w-11/12 mx-auto relative">
           {post.approachFindings()}
         </section>
       )}
@@ -272,11 +274,11 @@ function CAI() {
         </div>
       )}
 
-      {/*Framework / Learnings */}
+      {/*Framework / Services */}
       {typeof post.framework !== "undefined" && (
         <div className="bg-light">
           <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
-            <Heading>Framework and Learnings</Heading>
+            <Heading>Frameworks used in the project</Heading>
 
             {post.framework()}
           </div>
@@ -337,7 +339,7 @@ function CAI() {
         <Heading>
           <span className="text-center block">Read another success story.</span>
         </Heading>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-20 place-items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-20 place-items-stretch  mx-auto">
           {main
             .filter((study) => study.title != post.title)
             .slice(0, 3)

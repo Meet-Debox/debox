@@ -20,7 +20,7 @@ function CaseCard({
   return (
     <div
       data-aos="fade-up"
-      className={`space-y-8 place-self-center ${idx % 3 === 1 ? "" : ""}`}
+      className={` space-y-8 place-self-center ${idx % 3 === 1 ? "" : ""}`}
       key={client}
     >
       <div className="relative">
@@ -39,15 +39,18 @@ function CaseCard({
           <Image height={300} width={350} src={img[1]} />
         </div>
       </div>
-      <h5>{client}</h5>
-      <Link href={route}>
-        <h4 className="font-heading font-bold cursor-pointer">
-          <span className="text-highlight">{title}</span>
-        </h4>
-      </Link>
-      <Link href={"/case-studies?category=" + industry}>
-        <TransBtn size="sm">{industry}</TransBtn>
-      </Link>
+
+      <div className="w-11/12 mx-auto space-y-8">
+        <h5>{client}</h5>
+        <Link href={route}>
+          <h4 className="font-heading font-bold cursor-pointer">
+            <span className="text-highlight">{title}</span>
+          </h4>
+        </Link>
+        <Link href={"/case-studies?category=" + industry}>
+          <TransBtn size="sm">{industry}</TransBtn>
+        </Link>
+      </div>
     </div>
   );
 }

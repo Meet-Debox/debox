@@ -456,3 +456,16 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
     content: " [highlight end] ";
   }
 }
+
+.title-underline {
+  @apply bg-gradient-to-r from-black to-black hover:from-accent hover:to-accent/80
+ bg-no-repeat [background-position:0_108%] pt-1
+ [background-size:100%_0.22em] px-1 hover:text-white
+ motion-safe:transition-all motion-safe:duration-200
+ hover:[background-size:100%_100%]
+ focus:[background-size:100%_100%];
+}
+
+.flip {
+  transform: scale(-1, 1);
+}
