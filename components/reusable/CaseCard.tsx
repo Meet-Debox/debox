@@ -9,6 +9,7 @@ function CaseCard({
   img,
   idx,
   route,
+  tags,
 }: {
   industry: string;
   client: string;
@@ -16,6 +17,7 @@ function CaseCard({
   route: string;
   img: StaticImageData[];
   idx: number;
+  tags: string[];
 }) {
   return (
     <div
@@ -47,9 +49,16 @@ function CaseCard({
             <span className="text-highlight">{title}</span>
           </h4>
         </Link>
-        <Link href={"/case-studies?category=" + industry}>
-          <TransBtn size="sm">{industry}</TransBtn>
-        </Link>
+        <div className="space-x-4">
+          <Link href={"/case-studies?category=" + industry}>
+            <TransBtn size="sm">{industry}</TransBtn>
+          </Link>
+          {tags.map((tag) => (
+            <TransBtn key={tag} size="sm">
+              {tag}
+            </TransBtn>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -55,9 +55,16 @@ function CaseStudiesMain() {
               <Link href={study.route}>
                 <Button>Read More</Button>
               </Link>
-              <TransBtn size="sm">
-                <h4>{study.industry}</h4>
-              </TransBtn>
+              <div className="space-x-4">
+                <Link href={"/case-studies?category=" + study.industry}>
+                  <TransBtn size="sm">{study.industry}</TransBtn>
+                </Link>
+                {study.tags.map((tag) => (
+                  <TransBtn key={tag} size="sm">
+                    {tag}
+                  </TransBtn>
+                ))}
+              </div>
             </div>
           </div>
         </div>

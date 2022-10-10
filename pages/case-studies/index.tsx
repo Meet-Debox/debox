@@ -71,6 +71,7 @@ const CaseStudies: NextPage = () => {
               industry={study.industry}
               route={study.route}
               title={study.title}
+              tags={study.tags}
             />
           ))}
         </div>

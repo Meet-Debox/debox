@@ -1,18 +1,18 @@
-import React, { MutableRefObject } from "react";
-import { useRouter } from "next/router";
+// import React, { MutableRefObject } from "react";
+// import { useRouter } from "next/router";
 import cai from "../../components/data/cai";
 import { useState, useEffect, useRef } from "react";
-import { GetServerSideProps, GetServerSidePropsContext } from "next";
+// import { GetServerSideProps, GetServerSidePropsContext } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Heading from "../../components/reusable/Heading";
 import TransBtn from "../../components/reusable/TransBtn";
 import CaseCard from "../../components/reusable/CaseCard";
 import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
-import FrameworkCard from "../../components/reusable/FrameworkCard";
+// import FrameworkCard from "../../components/reusable/FrameworkCard";
 import Heading2 from "../../components/reusable/Heading2";
 import main from "../../components/data";
-import Arrow1 from "../../components/reusable/Arrow1";
+// import Arrow1 from "../../components/reusable/Arrow1";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -135,7 +135,7 @@ function CAI() {
           backgroundSize: "cover",
         }}
       />
-      <section className="cont max-w-7xl mx-auto w-11/12 space-y-10 grid md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 ">
+      <section className="cont max-w-7xl mx-auto w-10/12 space-y-10 grid md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 ">
         <Heading2
           title="Problem Statement"
           className="after:content-['Problem_Statement'] after:left-[50%] after:top-[50%] md:text-center md:after:text-center"
@@ -150,7 +150,7 @@ function CAI() {
       </section>
       {/* Timeline and Info */}
       <section className="relative cont bg-light">
-        <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overflow-clip mx-auto w-11/12">
+        <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start overflow-clip mx-auto w-10/12">
           <div className="relative sm:py-16 lg:py-0 lg:order-0">
             <div
               aria-hidden="true"
@@ -224,7 +224,7 @@ function CAI() {
 
       {/* Approach and findings */}
       {typeof post.approachFindings !== "undefined" && (
-        <section className="max-w-7xl cont w-11/12 mx-auto relative">
+        <section className="max-w-7xl cont w-10/12 mx-auto relative">
           {post.approachFindings()}
         </section>
       )}
@@ -232,7 +232,7 @@ function CAI() {
       {/* Work Done */}
       <div className="bg-light">
         {typeof post.workDoneSum !== "undefined" && (
-          <div className="max-w-7xl space-y-8 md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 cont mx-auto w-11/12">
+          <div className="max-w-7xl space-y-8 md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2 cont mx-auto w-10/12">
             {/* <Heading>
             <span className="">Work Done</span>
           </Heading> */}
@@ -245,7 +245,7 @@ function CAI() {
         )}
 
         {typeof post.workDoneList !== "undefined" && (
-          <div className="max-w-5xl mx-auto cont w-11/12">
+          <div className="max-w-5xl mx-auto cont -mt-14 w-10/12">
             {post.workDoneList()}
           </div>
         )}
@@ -265,7 +265,7 @@ function CAI() {
 
       {/* Outcome */}
       {typeof post.outcome !== "undefined" && (
-        <div className="max-w-7xl space-y-8 cont mx-auto w-11/12 md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2">
+        <div className="max-w-7xl space-y-8 cont mx-auto w-10/12 md:space-y-0 md:grid md:justify-start md:items-center md:grid-cols-2">
           <Heading2
             title="Outcome"
             className="after:content-['Outcome'] after:left-[49.4%]"
@@ -277,7 +277,7 @@ function CAI() {
       {/*Framework / Services */}
       {typeof post.framework !== "undefined" && (
         <div className="bg-light">
-          <div className="max-w-7xl space-y-8 cont mx-auto w-11/12">
+          <div className="max-w-7xl space-y-8 cont mx-auto w-10/12">
             <Heading>Frameworks used in the project</Heading>
 
             {post.framework()}
@@ -291,7 +291,7 @@ function CAI() {
         post.testimonials.map((el: any) => (
           <div
             key={el.by}
-            className="cont max-w-5xl mx-auto space-y-8 text-center w-11/12"
+            className="cont max-w-5xl mx-auto space-y-8 text-center w-10/12"
           >
             <Heading>Testimonial</Heading>
             <div className="relative">
@@ -335,7 +335,7 @@ function CAI() {
 
       {/* Related */}
 
-      <div className="max-w-7xl w-11/12 mx-auto cont ">
+      <div className="max-w-7xl w-10/12 mx-auto cont ">
         <Heading>
           <span className="text-center block">Read another success story.</span>
         </Heading>
@@ -352,6 +352,7 @@ function CAI() {
                 industry={study.industry}
                 route={study.route}
                 title={study.title}
+                tags={study.tags}
               />
             ))}
         </div>

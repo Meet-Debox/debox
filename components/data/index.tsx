@@ -22,6 +22,7 @@ const main = [
     img: [KALKI, KALKI2],
     route: "/",
     industry: "Fashion",
+    tags: ["Demo"],
   },
   {
     client: "Juno's Pizza",
@@ -30,6 +31,7 @@ const main = [
     img: [JUNO, JUNO2],
     route: "/",
     industry: "Food",
+    tags: ["Demo"],
   },
   {
     client: "Advik",
@@ -38,6 +40,7 @@ const main = [
     img: [CAI, CAI2],
     route: "/",
     industry: "Fashion",
+    tags: ["Demo"],
   },
   {
     client: "Khel",
@@ -46,6 +49,7 @@ const main = [
     img: [KALKI, KALKI2],
     route: "/",
     industry: "Fashion",
+    tags: ["Demo"],
   },
   {
     client: "Bawarchi",
@@ -54,6 +58,7 @@ const main = [
     img: [JUNO, JUNO2],
     route: "/",
     industry: "Food",
+    tags: ["Demo"],
   },
 ];
 export default main;

@@ -1,5 +1,6 @@
 import Heading from "../reusable/Heading";
 import clsx from "clsx";
+import FrameworkSlider from "./FrameworkSlider";
 
 import CAILogo from "../../public/Logo/05.jpg";
 import CAI from "../../public/studies/CAI/CAI.png";
@@ -18,12 +19,92 @@ import JUNO2 from "../../public/studies/JUNO/JUNO2.png";
 
 import FrameworkCard from "../reusable/FrameworkCard";
 
+const frameworkList = [
+  {
+    title: "Objective and Value Setting Framework",
+    icon() {
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          className="h-8 w-8"
+          viewBox="0 0 16 16"
+        >
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+          <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+        </svg>
+      );
+    },
+    content() {
+      return (
+        <ul>
+          <li>- Business Planning</li>
+          <li>- Historic Data Analysis</li>
+          <li>- Forecasting and Strategic direction</li>
+        </ul>
+      );
+    },
+  },
+  {
+    title: "People Practices Framework",
+    icon() {
+      return (
+        <svg
+          className="h-8 w-8 group-hover:fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path d="M224 0c70.7 0 128 57.3 128 128s-57.3 128-128 128S96 198.7 96 128 153.3 0 224 0zm-14.9 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2h39.5c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 39.5-161.2c77.2 12 136.3 78.8 136.3 159.4 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-80.6 59.1-147.4 136.3-159.4l39.5 161.2 33.4-123.9z"></path>
+        </svg>
+      );
+    },
+    content() {
+      return (
+        <ul>
+          <li>- Job Descriptions and Key Performance Indicators</li>
+          <li>- Manpower Planning</li>
+          <li>- Organization Structure</li>
+          <li>- Salary Benchmarking</li>
+        </ul>
+      );
+    },
+  },
+  {
+    title: "Process Improvement Framework",
+    icon() {
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+          className="w-8 h-8 group-hover:fill-white"
+        >
+          <path d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 101.2 150.1 40c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 261.2l55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm-64 160c0-17.7 14.3-32 32-32h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
+        </svg>
+      );
+    },
+    content() {
+      return (
+        <ul>
+          <li>- Knowledge Management</li>
+          <li>- Process Documentation</li>
+          <li>- Process Improvements</li>
+          <li>- Process Training</li>
+          <li>- Checklists and Process Flow</li>
+        </ul>
+      );
+    },
+  },
+];
+
 const deliveredList = [
   "Detailed Job Descriptions for all roles (current and near-future basis of the Business and Manpower plan)",
   "Documented existing processes and re-engineered them to bring more efficiency and automated processes that were critical to ensuring mistake proofing",
   "Created checklists and process flows to provide people more clarity and minimize mistakes and rework",
   "Communicated the Job Descriptions and Processes to all individuals and explained how these are going to help them improve their work and output and incorporated their inputs",
   "Analysed business data and created an 18-month business plan along with a growth-mapped Manpower Planning",
+  "We recommended management to focus on building more best sellers and diversify into other categories like Heels",
 ];
 
 const cai = {
@@ -35,6 +116,7 @@ const cai = {
     "Check how we helped a fast-growing women's footwear startup to structure their growth.",
   img: [CAI, CAI2, CAI3, CAI4, CAI5],
   industry: "Fashion",
+  tags: ["Consulting"],
   about() {
     return (
       <div className="space-y-4">
@@ -45,7 +127,7 @@ const cai = {
         </p>
         <p>
           {
-            " The CAI Store has served more than 2,00,000 happy customers to date and has grown 6x times since March 2020."
+            " The CAI Store has served more than 2,00,000 happy customers to date and has grown sixfold since March 2020."
           }
         </p>
         <p>
@@ -73,19 +155,19 @@ const cai = {
               className="font-bold font-AltoneBold text-xl md:text-2xl 
               "
             >
-              <span className="title-underline">
+              <span className="bg-accent text-white p-1">
                 Zeroing upon the problem statement
               </span>
             </div>
             <p className="text-justify">
               {
-                "We went through a series of interactions with the management team in identifying the various bottlenecks and challenges where they were getting dragged and were spending time that should have got utilized for business growth and expansion."
+                "We went through a series of interactions with the management team in identifying the various bottlenecks and challenges where they were getting dragged and were spending time that could have been spent on business growth and expansion."
               }
             </p>
           </div>
           <div className=" mx-auto space-y-3">
             <div className="font-bold font-AltoneBold text-xl md:text-2xl">
-              <span className="title-underline">
+              <span className="bg-accent text-white p-1">
                 Bucketing of problems/challenges
               </span>
             </div>
@@ -97,13 +179,13 @@ const cai = {
           </div>
           <div className=" mx-auto space-y-3 ">
             <div className="font-bold font-AltoneBold text-xl md:text-2xl">
-              <span className="title-underline">
+              <span className="bg-accent text-white p-1">
                 Validation of the problem statement
               </span>
             </div>
             <p className="text-justify">
               {
-                "We understood every role from the Management and their expectations from those roles post which we interacted with the manning those roles and understood their understanding of those roles and the challenges faced by them. This gave us clarity on whether the challenges were due to communication gaps, capability gaps or lack of intent from those individuals."
+                "We understood every role from the Management and their expectations from those roles post which we interacted with the people manning those roles and understood their understanding of those roles and the challenges faced by them. This gave us clarity on whether the challenges were due to communication gaps, capability gaps or lack of intent from those individuals."
               }
             </p>
           </div>
@@ -136,7 +218,7 @@ const cai = {
                 <Arrow1 className="md:hidden h-12 w-10 absolute bottom-0 right-0 -mb-11" />
               )}
               <li
-                data-aos-duration="2000"
+                data-aos-duration="1500"
                 data-aos={idx % 2 ? "fade-left" : "fade-right"}
                 className={clsx(
                   " md:flex md:flex-row md:items-center md:gap-4 relative",
@@ -178,72 +260,18 @@ const cai = {
   framework() {
     return (
       <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
-        <FrameworkCard
-          icon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              className="h-8 w-8"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-              <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-            </svg>
-          }
-          title="Objective and Value Setting Framework"
-        >
-          <ul>
-            <li>- Business Planning</li>
-            <li>- Historic Data Analysis</li>
-            <li>- Forecasting and Strategic direction</li>
-          </ul>
-        </FrameworkCard>
-        <FrameworkCard
-          icon={
-            <svg
-              className="h-8 w-8 group-hover:fill-white"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path d="M224 0c70.7 0 128 57.3 128 128s-57.3 128-128 128S96 198.7 96 128 153.3 0 224 0zm-14.9 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2h39.5c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 39.5-161.2c77.2 12 136.3 78.8 136.3 159.4 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-80.6 59.1-147.4 136.3-159.4l39.5 161.2 33.4-123.9z"></path>
-            </svg>
-          }
-          title="People Practices Framework"
-        >
-          <ul>
-            <li>- Job Descriptions and Key Performance Indicators</li>
-            <li>- Manpower Planning</li>
-            <li>- Organization Structure</li>
-            <li>- Salary Benchmarking</li>
-          </ul>
-        </FrameworkCard>
-        <FrameworkCard
-          icon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-              className="w-8 h-8 group-hover:fill-white"
-            >
-              <path d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 101.2 150.1 40c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 261.2l55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm-64 160c0-17.7 14.3-32 32-32h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
-            </svg>
-          }
-          title="Process Improvement Framework"
-        >
-          <ul>
-            <li>- Knowledge Management</li>
-            <li>- Process Documentation</li>
-            <li>- Process Improvements</li>
-            <li>- Process Training</li>
-            <li>- Checklists and Process Flow</li>
-          </ul>
-        </FrameworkCard>
+        {frameworkList.map((framework) => (
+          <FrameworkCard
+            icon={framework.icon()}
+            key={framework.title}
+            title={framework.title}
+          >
+            {framework.content()}
+          </FrameworkCard>
+        ))}
+        {/* <FrameworkSlider frameworkList={frameworkList} /> */}
       </div>
     );
-  },
-  servicesDeployed() {
-    return <div>1</div>;
   },
   testimonials: [
     {
