@@ -265,10 +265,9 @@ const junos = {
           <hr />
 
           <li>
-            Juno's Pizza grew by 38% YOY in 2018-19, turned positive on their
-            Outlet Level EBITDA (13% from 0.4%) and improved the Company Level
-            EBITDA from (-17% from -37%). Juno's Pizza was acquired by Cure
-            Foods in 2022.
+            {
+              " Juno's Pizza grew by 38% YOY in 2018-19, turned positive on their Outlet Level EBITDA (13% from 0.4%) and improved the Company Level EBITDA from (-17% from -37%). Juno's Pizza was acquired by Cure Foods in 2022."
+            }
           </li>
         </ul>
       </div>

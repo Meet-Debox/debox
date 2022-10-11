@@ -30,15 +30,6 @@ const CaseStudies: NextPage = () => {
     }
   }, [category]);
 
-  // useEffect(() => {
-  //   if (activeCat === "All") {
-  //     setFilteredStudies(main);
-  //     return;
-  //   } else {
-  //     setFilteredStudies(main.filter((study) => study.industry == activeCat));
-  //   }
-  // }, [activeCat]);
-
   return (
     <div className="min-h-screen bg-light pt-28 ">
       <div className="max-w-7xl mx-auto cont w-11/12">

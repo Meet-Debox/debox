@@ -43,30 +43,33 @@ function BgVid() {
   };
 
   return (
-    <div className="z-[-1] absolute top-0 left-0 h-screen w-[99.6vw]  bg-white/40">
-      <YoutubeBackground className="h-full w-full" videoId={"ncYEo1m7i2U"}>
-        <div className="max-w-7xl mx-auto ">
-          <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
-            <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[60%]">
-              Partnering with SMEs, Family Managed Businesses and Startups in{" "}
-              <div className="">
-                driving{" "}
-                <span
-                  className={`${activeColor.find((el) => el.isActive)?.col}`}
-                >
-                  <ReactRotatingText
-                    // eraseMode="overwrite"
-                    onDeletingEnd={handleChange}
-                    // cursor={false}
-                    items={["Growth.", "Sustainability.", "Culture."]}
-                  />
-                </span>
-              </div>
-            </h2>
-          </div>
+    // <div className="z-[-1] absolute top-0 left-0  overflow-hidden bg-white/40">
+    //   <div className="max-w-[99.6vw] overflow-clip">
+    <YoutubeBackground
+      className="h-screen w-screen absolute top-0 left-0 -z-50"
+      videoId={"ncYEo1m7i2U"}
+    >
+      <div className="max-w-7xl mx-auto ">
+        <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
+          <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[60%]">
+            Partnering with SMEs, Family Managed Businesses and Startups in{" "}
+            <div className="">
+              driving{" "}
+              <span className={`${activeColor.find((el) => el.isActive)?.col}`}>
+                <ReactRotatingText
+                  // eraseMode="overwrite"
+                  onDeletingEnd={handleChange}
+                  // cursor={false}
+                  items={["Growth.", "Sustainability.", "Culture."]}
+                />
+              </span>
+            </div>
+          </h2>
         </div>
-      </YoutubeBackground>
-    </div>
+      </div>
+    </YoutubeBackground>
+    //   </div>
+    // </div>
   );
 }
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Vimeo from "@u-wave/react-vimeo";
+import BackgroundVideo from "./reusable/VimeoVid";
 
 const BgVid = dynamic(() => import("./reusable/BgVid"), {
   ssr: false,
@@ -16,7 +18,9 @@ function Hero() {
   }, []);
 
   return (
-    <div>
+    <div className="-z-20">
+      {/* <BackgroundVideo /> */}
+
       <BgVid />
     </div>
   );
