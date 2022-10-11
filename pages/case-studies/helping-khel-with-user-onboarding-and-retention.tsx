@@ -1,6 +1,5 @@
-import cai from "../../components/data/cai";
 import { useState, useEffect, useRef } from "react";
-
+import KhelData from "../../components/data/khelplayRummy";
 import HeadHTML from "../../components/reusable/caseStudies/HeadHTML";
 import Hero from "../../components/reusable/caseStudies/Hero";
 import AboutClient from "../../components/reusable/caseStudies/AboutClient";
@@ -17,8 +16,8 @@ import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-function CAI() {
-  const post = cai;
+function Khel() {
+  const post = KhelData;
 
   const imgArray: Array<any> = [useRef(null), useRef(null)];
   gsap.registerPlugin(ScrollTrigger);
@@ -77,9 +76,10 @@ function CAI() {
       )}
 
       {/* Testimonials */}
-      {post.testimonials && post.testimonials?.length > 0 && (
+
+      {/* {typeof post.testimonials !== "undefined" && (
         <Testimonial list={post.testimonials} />
-      )}
+      )} */}
 
       <SurveyCTAStrip isDark />
 
@@ -90,4 +90,4 @@ function CAI() {
   );
 }
 
-export default CAI;
+export default Khel;

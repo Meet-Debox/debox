@@ -9,7 +9,7 @@ import Vimeo from "@u-wave/react-vimeo";
 import Button from "../components/reusable/Button";
 import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
 import ClientCarousel from "../components/reusable/ClientCarousel";
-import Arrow1 from "../components/reusable/Arrow1";
+import Arrow1 from "../components/reusable/icons/Arrow1";
 import FooterBlob from "../components/reusable/FooterBlob";
 
 // import hero from '../public/hero-vid.mp4'

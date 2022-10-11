@@ -45,7 +45,7 @@ const CaseStudies: NextPage = () => {
         <div
           ref={buttonsDiv}
           className={`flex flex-row items-center gap-10 overflow-auto pb-4 mx-auto  ${
-            inds.length <= 4 ? "justify-center" : "justify-start"
+            inds.length <= 2 ? "justify-center" : "justify-start"
           }`}
         >
           {/* w-fit if not scrollable   */}
@@ -67,7 +67,8 @@ const CaseStudies: NextPage = () => {
               key={"CC" + idx}
               client={study.client}
               idx={idx}
-              img={study.img}
+              img1={study.side1}
+              img2={study.side2}
               industry={study.industry}
               route={study.route}
               title={study.title}

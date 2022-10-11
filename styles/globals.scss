@@ -40,7 +40,7 @@ $accent: #04cdec;
   border: 0px solid #000000;
 }
 .cont {
-  @apply py-6 md:py-14 text-lg md:text-2xl;
+  @apply py-6 md:py-14 text-lg md:text-xl;
 }
 
 .font-size {
@@ -390,15 +390,6 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
   }
 }
 
-// Blog Page -> BG IMG
-.blog-wide-img {
-  height: 40vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center center;
-  transform: scale(0.78, 0.78);
-}
-
 :root {
   --bg-color-hsl: 59, 3%, 94%;
   --bg-color: hsl(var(--bg-color-hsl));
@@ -468,4 +459,51 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
 
 .flip {
   transform: scale(-1, 1);
+}
+
+// for expanding case-study imgs
+
+// Blog Page -> BG IMG
+.blog-wide-img {
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(0.78, 0.78);
+}
+// h-[28rem] bg-no-repeat bg-cover
+
+.cai-breakImg-1 {
+  background-image: url("/studies/CAI/Break1.png");
+}
+
+.cai-breakImg-2 {
+  background-image: url("/studies/CAI/Break2.png");
+}
+
+.kalki-breakImg-1 {
+  background-image: url("/studies/Kalki/Break2.jpeg");
+}
+.kalki-breakImg-2 {
+  background-image: url("/studies/Kalki/Break2.jpeg");
+}
+.junos-breakImg-1 {
+  background-image: url("/studies/Junos/Break1.jpg");
+}
+.junos-breakImg-2 {
+  background-image: url("/studies/Junos/Break2.jpg");
+}
+.khelplay-breakImg-1 {
+  background-image: url("/studies/Khel/Break1.jpg");
+}
+
+.khelplay-breakImg-2 {
+  background-image: url("/studies/Khel/Break2.jpg");
+}
+.bayowl-breakImg-1 {
+  background-image: url("/studies/BayOwl/Break1.jpg");
+}
+
+.bayowl-breakImg-2 {
+  background-image: url("/studies/BayOwl/Break2.jpeg");
 }

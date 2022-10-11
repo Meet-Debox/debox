@@ -7,7 +7,7 @@ type HeadingProps = {
 };
 
 // after:content-["ABC"]
-function Heading({ title, className }: HeadingProps) {
+function Heading2({ title, className }: HeadingProps) {
   return (
     <div className="">
       <h2
@@ -22,4 +22,4 @@ function Heading({ title, className }: HeadingProps) {
   );
 }
 
-export default Heading;
+export default Heading2;

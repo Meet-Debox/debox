@@ -6,7 +6,8 @@ function CaseCard({
   industry,
   client,
   title,
-  img,
+  img1,
+  img2,
   idx,
   route,
   tags,
@@ -15,7 +16,8 @@ function CaseCard({
   client: string;
   title: string;
   route: string;
-  img: StaticImageData[];
+  img1: StaticImageData;
+  img2: StaticImageData;
   idx: number;
   tags: string[];
 }) {
@@ -30,7 +32,7 @@ function CaseCard({
           <Image
             className="w-full h-full z-10"
             objectFit="contain"
-            src={img[0]}
+            src={img1}
           />
         </div>
         <div
@@ -38,7 +40,7 @@ function CaseCard({
             idx % 2 === 0 ? "right-0" : "left-0"
           }`}
         >
-          <Image height={300} width={350} src={img[1]} />
+          <Image height={250} width={350} src={img2} />
         </div>
       </div>
 

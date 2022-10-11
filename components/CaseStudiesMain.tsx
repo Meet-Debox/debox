@@ -26,12 +26,12 @@ function CaseStudiesMain() {
                   )}
                 >
                   <Image
-                    src={study.img[1]}
+                    src={study.side1}
                     width={391}
                     height={385}
                     objectFit="contain"
                     className={
-                      "w-full h-full object-contain object-left-bottom -ml-20"
+                      "w-full h-full object-contain object-left-bottom -ml-20 "
                     }
                   />
                 </div>
@@ -43,7 +43,7 @@ function CaseStudiesMain() {
                     objectFit="contain"
                     className="w-full h-full object-contain object-center"
                     alt={study.client + "Consulted by Debox"}
-                    src={study.img[0]}
+                    src={study.side2}
                   />
                 </div>
               </div>
@@ -51,7 +51,13 @@ function CaseStudiesMain() {
 
             <div className=" md:w-1/2 text-lg md:text-2xl flex flex-col gap-4 sm:gap-7 md:gap-12">
               <h4>{study.client}</h4>
-              <h4 className="font-heading font-bold">{study.title}</h4>
+              <Link href={study.route}>
+                <h4 className="font-heading font-bold ">
+                  <span className="text-highlight !cursor-pointer">
+                    {study.title}
+                  </span>
+                </h4>
+              </Link>
               <Link href={study.route}>
                 <Button>Read More</Button>
               </Link>

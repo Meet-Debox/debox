@@ -1,4 +1,4 @@
-import cai from "../../components/data/cai";
+import junos from "../../components/data/junos";
 import { useState, useEffect, useRef } from "react";
 
 import HeadHTML from "../../components/reusable/caseStudies/HeadHTML";
@@ -17,8 +17,8 @@ import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-function CAI() {
-  const post = cai;
+function Junos() {
+  const post = junos;
 
   const imgArray: Array<any> = [useRef(null), useRef(null)];
   gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +38,7 @@ function CAI() {
   }, []);
 
   return (
-    <div className="">
+    <div className="w-full">
       <HeadHTML title={post.title} />
       <Hero
         bannerImg={post.heroBanner}
@@ -90,4 +90,4 @@ function CAI() {
   );
 }
 
-export default CAI;
+export default Junos;
