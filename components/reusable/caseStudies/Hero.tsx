@@ -22,12 +22,12 @@ function Hero({
       <div className="max-w-7xl mx-auto grid place-items-center">
         <div className="font-size pt-8 max-w-2xl z-10 bg-white md:px-20 -mt-60 mx-auto text-center pb-8 md:pb-20">
           <TransBtn size="sm">{industry}</TransBtn>
-          <h4 className="font-heading font-bold mt-8 mb-20 text-xl md:text-3xl">
+          <h4 className="font-heading font-bold mt-8 mb-8 text-xl md:text-3xl">
             {title}
           </h4>
           <div className="space-y-3">
-            <p className="text-sm uppercase font-bold">Client</p>
-            <Image height={140} width={150} src={logoImg} />
+            <p className="text-base uppercase font-bold">Client</p>
+            <Image height={200} width={200} src={logoImg} />
           </div>
         </div>
       </div>

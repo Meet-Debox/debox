@@ -52,7 +52,7 @@ function CAI() {
         ref={(el) => (imgArray[1] = el)}
         className={`blog-wide-img ${post.break1}`}
       />
-      <ProblemStatement type={"Opportunity"} content={post.problem} />
+      <ProblemStatement type={"Problem Statement"} content={post.problem} />
       <TimelineInfo
         projInfo={post.projInfo}
         timeline={post.timeline}

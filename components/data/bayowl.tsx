@@ -71,7 +71,7 @@ const keyFindings = [
   " We worked on redesigning the website completely, the focus was to reflect the vibe of the music industry and make it look richer and classy. ",
   " We built a front-end user workflow that was simple and engaging. We took the users to the Online Services page, once the user had created an account adding services was a click away. We created a Dashboard from where the users could initiate a project, upload files and track the project's status.",
   " Meanwhile we worked on building a code structure and nesting on an Excel sheet and explored various ways in which the code structure design and updating can be done easily.",
-  "We built the backend code in a way where the entire service structure (78 services that were categorized into 2 main categories, 6 subcategories, 16 service types, 30 sub-services that had more than 30 variables) can be uploaded through a CSV/File and updated in a single click.",
+  "We built the backend code in a way where the entire service structure (78 services which were categorized into 2 main categories, 6 subcategories, 16 service types, 30 sub-services that had more than 30 variables) can be uploaded through a CSV/File and can be updated in a single click.",
   "We developed a backend admin panel through which the Management can track and assign, reassign and monitor the team's work.",
   "We developed a backend panel for managers to track and assign, reassign, monitor, approve and reject work done by the team.",
   "We developed a backend panel for the engineers (team) to track services assigned to them, reupload the files worked, receive feedback from Manager and Customers and upload the final project files once project is completed.",
@@ -138,12 +138,12 @@ const bayowl = {
     {
       title: "Cloud Management and Complexity:",
       description:
-        "The online services required the uploading and downloading of multiple files (up to 60 at a time) each ranging on an average of 100-200 MBs. There were a lot of challenges in managing such vast data as it was to be managed at multiple stages of the service journey the local user level, cloud and at engineer level.",
+        "The online services required the uploading and downloading of multiple files (up to 60 at a time) each ranging on an average of 100-200 MBs. There were a lot of challenges in managing such vast data as it was to be managed at multiple stages of the service journey at the local user level, cloud and at engineer level.",
     },
     {
       title: "Backend Management:",
       description:
-        "We had to build a backend management platform to assign the Online Services to different team members, team members will be working on these services and reupload the engineered files for customer review and the process involved a couple of rounds of back and forth.",
+        "We had to build a backend management platform to assign the Online Services to different team members, team members will be working on these services and reupload the engineered files for customer review and the process involved a few of rounds of back and forth.",
     },
     {
       title: "Customer Portal",

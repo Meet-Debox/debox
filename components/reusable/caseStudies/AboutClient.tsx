@@ -51,7 +51,7 @@ function AboutClient({
             </svg>
           </div>
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-10">
-            <div className="relative overflow-hidden max-h-[30rem]">
+            <div className="relative overflow-hidden max-h-[28rem]">
               <Image
                 objectFit="cover"
                 className="h-full w-full absolute inset-0 top-0 left-0"

@@ -111,9 +111,9 @@ const Khel = {
       </div>
     );
   },
-  workDoneList() {
-    return <></>;
-  },
+  // workDoneList() {
+  //   return <></>;
+  // },
   outcome() {
     return (
       <div className="space-y-4">

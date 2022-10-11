@@ -117,7 +117,7 @@ const About: NextPage = () => {
               <div className="mt-6 text-black space-y-6 text-justify">
                 <p className="">
                   {
-                    "From redesigning and successful deployment of the Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal job and Talent search platform, Debox come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
+                    "From redesigning and successful deployment of the Pan India Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal Job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
                   }
                 </p>
                 {/* <p className="text-base leading-7">
@@ -138,7 +138,7 @@ const About: NextPage = () => {
         <Heading>Who we are</Heading>
         <p className="text-justify">
           {
-            "Every member of Debox comes from different educational backgrounds and a variety of experiences encompassing entrepreneurship, human resources, marketing, finance, design, commerce, and technology. Our members have worked across companies of various sizes across industries and have gained knowledge and expertise in driving change and building higher-performance organizations and cultures."
+            "Every member of Debox comes from different backgrounds and has a variety of experiences encompassing entrepreneurship, human resources, marketing, finance, design, commerce, and technology. Our members have worked across companies of various sizes across industries and have gained knowledge and expertise in driving change and building high-performance organizations and cultures."
           }
         </p>
       </section>
@@ -146,7 +146,7 @@ const About: NextPage = () => {
       <section className="cont text-center space-y-10 mx-auto w-11/12">
         <Framework />
       </section>
-      <SurveyCTAStrip />
+      <SurveyCTAStrip isDark />
       {/* How we work */}
       <section className="relative cont">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -233,11 +233,11 @@ const About: NextPage = () => {
           <p>
             {"We love working on complex business challenges, see "}
             <Link href="/case-studies">
-              <span className="bg-accent p-1 underline cursor-pointer">
+              <span className="bg-darkBlue text-white p-1 cursor-pointer">
                 the problem statements
               </span>
             </Link>
-            {" we’ve tackled."}
+            {"we’re tackling now or explore some of our recent work."}
           </p>
         </section>
       </section>

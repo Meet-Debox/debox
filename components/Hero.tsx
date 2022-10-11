@@ -20,7 +20,6 @@ function Hero() {
   return (
     <div className="-z-20">
       {/* <BackgroundVideo /> */}
-
       <BgVid />
     </div>
   );

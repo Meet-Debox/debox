@@ -10,7 +10,7 @@ function MoreStudies({ title }: { title: string }) {
         <Heading>
           <span className="text-center block">Read another success story.</span>
         </Heading>
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-20 place-items-stretch  mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-20 place-items-stretch  mx-auto">
           {main
             .filter((study) => study.title != title)
             .slice(0, 3)
@@ -27,7 +27,7 @@ function MoreStudies({ title }: { title: string }) {
                 tags={study.tags}
               />
             ))}
-        </div> */}
+        </div>
       </div>
     </>
   );

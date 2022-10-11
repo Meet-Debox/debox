@@ -51,7 +51,7 @@ function Khel() {
         ref={(el) => (imgArray[1] = el)}
         className={`blog-wide-img ${post.break1}`}
       />
-      <ProblemStatement type={"Opportunity"} content={post.problem} />
+      <ProblemStatement type={"Problem Statement"} content={post.problem} />
       <TimelineInfo
         projInfo={post.projInfo}
         timeline={post.timeline}
@@ -61,7 +61,8 @@ function Khel() {
       <ApproachFindings approachList={post.approachList} />
 
       {/* Work Done */}
-      <WorkDone summaryJsx={post.workDoneSum} listJsx={post.workDoneList} />
+
+      <WorkDone summaryJsx={post.workDoneSum} />
 
       {/* Image Break 2 */}
       <div

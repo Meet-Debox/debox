@@ -494,7 +494,8 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
   background-image: url("/studies/Junos/Break2.jpg");
 }
 .khelplay-breakImg-1 {
-  background-image: url("/studies/Khel/Break1.jpg");
+  background-image: url("/studies/Khel/Break1.webp");
+  background-position: 40% 35%;
 }
 
 .khelplay-breakImg-2 {
@@ -506,4 +507,8 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
 
 .bayowl-breakImg-2 {
   background-image: url("/studies/BayOwl/Break2.jpeg");
+}
+
+.framework-wrapper > * {
+  flex: 1 1 100px !important;
 }

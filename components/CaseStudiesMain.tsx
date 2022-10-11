@@ -26,7 +26,7 @@ function CaseStudiesMain() {
                   )}
                 >
                   <Image
-                    src={study.side1}
+                    src={study.side2}
                     width={391}
                     height={385}
                     objectFit="contain"
@@ -43,7 +43,7 @@ function CaseStudiesMain() {
                     objectFit="contain"
                     className="w-full h-full object-contain object-center"
                     alt={study.client + "Consulted by Debox"}
-                    src={study.side2}
+                    src={study.side1}
                   />
                 </div>
               </div>
@@ -77,7 +77,9 @@ function CaseStudiesMain() {
       ))}
 
       <div className="text-center">
-        <Button>See All</Button>
+        <Link href={"/case-studies"}>
+          <Button>See All</Button>
+        </Link>
       </div>
     </div>
   );

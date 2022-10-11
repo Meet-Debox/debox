@@ -5,7 +5,7 @@ function WorkDone({
   listJsx,
 }: {
   summaryJsx: () => React.ReactNode;
-  listJsx: () => React.ReactNode;
+  listJsx?: () => React.ReactNode;
 }) {
   return (
     <div className="bg-light">
@@ -17,9 +17,13 @@ function WorkDone({
         <p className="text-justify">{summaryJsx()}</p>
       </div>
 
-      <div>
-        <div className="mx-auto cont -mt-14 w-10/12 max-w-5xl">{listJsx()}</div>
-      </div>
+      {listJsx && (
+        <div>
+          <div className="mx-auto cont -mt-14 w-10/12 max-w-5xl">
+            {listJsx()}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

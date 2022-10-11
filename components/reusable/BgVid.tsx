@@ -46,7 +46,7 @@ function BgVid() {
     // <div className="z-[-1] absolute top-0 left-0  overflow-hidden bg-white/40">
     //   <div className="max-w-[99.6vw] overflow-clip">
     <YoutubeBackground
-      className="h-screen w-screen absolute top-0 left-0 -z-50"
+      className="h-screen w-screen absolute top-0 left-0 -z-50 overflow-x-hidden"
       videoId={"ncYEo1m7i2U"}
     >
       <div className="max-w-7xl mx-auto ">

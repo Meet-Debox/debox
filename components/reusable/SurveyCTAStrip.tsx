@@ -4,7 +4,7 @@ function SurveyCTAStrip({ isDark = false }: { isDark?: boolean }) {
   return (
     <div className={`${isDark && "bg-accent text-white"}`}>
       <div className="max-w-5xl text-center w-11/12 cont mx-auto font-bold">
-        <div className="">
+        <div className="text-2xl">
           <p>Check where your company stands</p>
           <p>
             on our{" "}
@@ -13,13 +13,13 @@ function SurveyCTAStrip({ isDark = false }: { isDark?: boolean }) {
             </span>
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center pt-6 gap-2 group w-fit mx-auto cursor-pointer">
+        <div className="flex flex-col justify-center items-center pt-6 gap-2 group w-fit mx-auto cursor-not-allowed">
           <h4
             className={`${
               isDark ? "group-hover:text-darkBlue" : "group-hover:text-primary"
             } duration-200 transition-colors`}
           >
-            Start Now
+            Coming Soon!
           </h4>
           <div>
             <svg
