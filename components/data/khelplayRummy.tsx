@@ -11,6 +11,7 @@ import Arrow1 from "../reusable/icons/Arrow1";
 import ProcessFramework from "../reusable/icons/ProcessFramework";
 
 import FrameworkCard from "../reusable/FrameworkCard";
+import ComFramework from "../reusable/icons/CommunicationFramework";
 
 const frameworkList = [
   {
@@ -22,6 +23,19 @@ const frameworkList = [
           <li>- Benchmarking</li>
           <li>- User Onboarding Journey</li>
           <li>- Personalized Journey using CleverTap</li>
+        </ul>
+      );
+    },
+  },
+  {
+    title: "Effective Communication Framework",
+    icon: () => <ComFramework />,
+    content() {
+      return (
+        <ul>
+          <li>- Personalised user content strategy</li>
+          <li>- Trigger based content automation</li>
+          <li>- Focus on educational and awareness content</li>
         </ul>
       );
     },

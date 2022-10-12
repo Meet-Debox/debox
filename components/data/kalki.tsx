@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import logo from "../../public/Logo/12.jpg";
-import HeroBanner from "../../public/studies/Kalki/Hero_Banner.jpg";
+import HeroBanner from "../../public/studies/Kalki/Hero_Banner.jpeg";
 import SideImg2 from "../../public/studies/Kalki/Side2.png";
 import SideImg1 from "../../public/studies/Kalki/Side1.png";
 import Testimonial1 from "../../public/studies/Kalki/Testimonial.png";

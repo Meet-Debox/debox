@@ -11,7 +11,7 @@ function Description() {
 
       <p className="py-4 md:py-8">
         {
-          "Here is how Debox has been partnering in delivering Growth and Sustainability for the clients across industries"
+          "Here is how we have been partnering with our clients in delivering Growth and Sustainability across a multitude of industries."
         }
       </p>
     </div>

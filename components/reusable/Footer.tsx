@@ -103,7 +103,7 @@ function Footer() {
             </svg>
             <div className="flex items-center gap-3">
               <span className="text-lg pt-0.5">Follow Us On:</span>
-              <a href="https://www.instagram.com/deboxmarketing">
+              <a href="https://www.facebook.com/deboxconsulting/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

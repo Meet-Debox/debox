@@ -374,10 +374,10 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
     // right: 0;
     // margin: 0 auto;
     position: absolute;
-    opacity: 0.9;
+    opacity: 1;
     top: calc(40% + 6px);
     transform: translate(-50%, -50%);
-    z-index: -2;
+    z-index: 3;
     @include stroke-width(0);
     @include background-clip(text);
     @include fill-color(transparent);
@@ -482,10 +482,11 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
 }
 
 .kalki-breakImg-1 {
-  background-image: url("/studies/Kalki/Break2.jpeg");
+  background-image: url("/studies/Kalki/Break1.jpeg");
 }
 .kalki-breakImg-2 {
-  background-image: url("/studies/Kalki/Break2.jpeg");
+  background-image: url("/studies/Kalki/Break2.jpg");
+  background-position: 40% 60%;
 }
 .junos-breakImg-1 {
   background-image: url("/studies/Junos/Break1.jpg");

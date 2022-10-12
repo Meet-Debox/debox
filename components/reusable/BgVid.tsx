@@ -13,12 +13,12 @@ function BgVid() {
     },
     {
       name: "Sustainability",
-      col: "bg-darkBlue",
+      col: "bg-accent",
       isActive: false,
     },
     {
       name: "Culture",
-      col: "bg-accent",
+      col: "bg-darkBlue",
       isActive: false,
     },
   ]);
@@ -47,7 +47,7 @@ function BgVid() {
     //   <div className="max-w-[99.6vw] overflow-clip">
     <YoutubeBackground
       className="h-screen w-screen absolute top-0 left-0 -z-50 overflow-x-hidden"
-      videoId={"ncYEo1m7i2U"}
+      videoId={"PL73i1KfQp8"}
     >
       <div className="max-w-7xl mx-auto ">
         <div className="z-10 h-screen mx-auto flex items-center w-[95%]">

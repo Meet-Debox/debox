@@ -53,9 +53,9 @@ const About: NextPage = () => {
         </p>
       </div>
       {/* Story */}
-      <section className="relative cont">
+      <section className="relative cont bg-light">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-          <div className="relative sm:py-16 lg:py-0">
+          <div className="relative lg:py-0">
             <div
               aria-hidden="true"
               className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
@@ -93,7 +93,7 @@ const About: NextPage = () => {
                 />
               </svg>
             </div>
-            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+            <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none">
               <div className="relative overflow-hidden">
                 {/* <img
                   className="absolute inset-0 h-full w-full object-cover"
@@ -109,14 +109,14 @@ const About: NextPage = () => {
             </div>
           </div>
 
-          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
+          <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 bg-light">
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <Heading>Our Story</Heading>
               <div className="mt-6 text-black space-y-6 text-justify">
                 <p className="">
                   {
-                    "From redesigning and successful deployment of the Pan India Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal Job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
+                    "From redesigning and successful deployment of the Pan India Supply Chain process for Nippo Batteries to designing and developing InRadius - India's first true hyperlocal Job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
                   }
                 </p>
                 {/* <p className="text-base leading-7">
@@ -132,8 +132,8 @@ const About: NextPage = () => {
           </div>
         </div>
       </section>
-      {/* Who We Are */}
-      <section className="cont text-center space-y-10 mx-auto max-w-5xl w-11/12">
+      ` {/* Who We Are */}`
+      <section className="cont text-center space-y-10 mx-auto max-w-5xl w-11/12 ">
         <Heading>Who we are</Heading>
         <p className="text-justify">
           {
@@ -142,9 +142,11 @@ const About: NextPage = () => {
         </p>
       </section>
       {/* Framework */}
-      <section className="cont text-center space-y-10 mx-auto w-11/12">
-        <Framework />
-      </section>
+      <div className="bg-light">
+        <section className="cont text-center space-y-10 mx-auto w-11/12">
+          <Framework />
+        </section>
+      </div>
       <SurveyCTAStrip isDark />
       {/* How we work */}
       <section className="relative cont">
@@ -188,7 +190,7 @@ const About: NextPage = () => {
               </svg>
             </div>
             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-10">
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden max-h-[28rem]">
                 {/* <img
                   className="absolute inset-0 h-full w-full object-cover"
                   src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -226,7 +228,7 @@ const About: NextPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="bg-light">
         <section className="cont text-center space-y-10 mx-auto max-w-5xl">
           <Heading>Explore our work</Heading>
           <p>

@@ -31,10 +31,10 @@ const resources = [
     title: "Effective Communication",
     img: I4,
   },
-  {
-    title: "Workplace and Environment",
-    img: I5,
-  },
+  // {
+  //   title: "Workplace and Environment",
+  //   img: I5,
+  // },
   {
     title: "Digital Transformation",
     img: I6,
