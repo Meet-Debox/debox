@@ -48,7 +48,6 @@ const About: NextPage = () => {
             </div>
           ))}
         </div>
-        <Button>Debox at a glance</Button>
         <p className="mt-8 italic">
           {"Debox is pronounced as De box and stands for 'Out of the box'."}
         </p>
