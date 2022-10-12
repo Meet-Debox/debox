@@ -231,7 +231,7 @@ const About: NextPage = () => {
       <section className="bg-light">
         <section className="cont text-center space-y-10 mx-auto max-w-5xl">
           <Heading>Explore our work</Heading>
-          <p>
+          <p className="text-sm md:text-lg">
             {"We love working on complex business challenges, see "}
             <Link href="/case-studies">
               <span className="bg-darkBlue text-white p-1 cursor-pointer">

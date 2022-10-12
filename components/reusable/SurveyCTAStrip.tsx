@@ -4,7 +4,7 @@ function SurveyCTAStrip({ isDark = false }: { isDark?: boolean }) {
   return (
     <div className={`${isDark && "bg-accent text-white"}`}>
       <div className="max-w-5xl text-center w-11/12 cont mx-auto font-bold">
-        <div className="text-2xl">
+        <div className="md:text-2xl">
           <p>Check where your company stands</p>
           <p>
             on our{" "}

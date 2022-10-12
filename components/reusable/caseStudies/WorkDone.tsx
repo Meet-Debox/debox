@@ -19,7 +19,7 @@ function WorkDone({
 
       {listJsx && (
         <div>
-          <div className="mx-auto cont -mt-14 w-10/12 max-w-5xl">
+          <div className="mx-auto cont md:-mt-14 w-10/12 max-w-5xl">
             {listJsx()}
           </div>
         </div>

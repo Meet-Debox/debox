@@ -43,7 +43,9 @@ function CaseStudiesMain() {
                     objectFit="contain"
                     className="w-full h-full object-contain object-center"
                     alt={study.client + "Consulted by Debox"}
-                    src={study.side1}
+                    src={
+                      study.client === "Kalki" ? study.heroBanner : study.side1
+                    }
                   />
                 </div>
               </div>

@@ -60,6 +60,7 @@ const CaseStudies: NextPage = () => {
               idx={idx}
               img1={study.side1}
               img2={study.side2}
+              bannerImg={study.heroBanner}
               industry={study.industry}
               route={study.route}
               title={study.title}

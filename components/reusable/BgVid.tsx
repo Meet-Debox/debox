@@ -51,19 +51,17 @@ function BgVid() {
     >
       <div className="max-w-7xl mx-auto ">
         <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
-          <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[60%]">
+          <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[55%]">
             Partnering with SMEs, Family Managed Businesses and Startups in{" "}
-            <div className="">
-              driving{" "}
-              <span className={`${activeColor.find((el) => el.isActive)?.col}`}>
-                <ReactRotatingText
-                  // eraseMode="overwrite"
-                  onDeletingEnd={handleChange}
-                  // cursor={false}
-                  items={["Growth.", "Sustainability.", "Culture."]}
-                />
-              </span>
-            </div>
+            driving{" "}
+            <span className={`${activeColor.find((el) => el.isActive)?.col}`}>
+              <ReactRotatingText
+                // eraseMode="overwrite"
+                onDeletingEnd={handleChange}
+                // cursor={false}
+                items={["Growth.", "Sustainability.", "Culture."]}
+              />
+            </span>
           </h2>
         </div>
       </div>

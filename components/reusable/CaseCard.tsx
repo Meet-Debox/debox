@@ -8,6 +8,7 @@ function CaseCard({
   title,
   img1,
   img2,
+  bannerImg,
   idx,
   route,
   tags,
@@ -18,6 +19,7 @@ function CaseCard({
   route: string;
   img1: StaticImageData;
   img2: StaticImageData;
+  bannerImg?: StaticImageData;
   idx: number;
   tags: string[];
 }) {
@@ -27,23 +29,24 @@ function CaseCard({
       className={` space-y-8 place-self-center ${idx % 3 === 1 ? "" : ""}`}
       key={client}
     >
-      <div className="relative">
-        <div className="h-82 w-[20rem] mx-auto">
-          <Image
-            className="w-full h-full z-10"
-            objectFit="contain"
-            src={img1}
-          />
+      <Link href={route}>
+        <div className="relative">
+          <div className="h-82 w-[20rem] mx-auto">
+            <Image
+              className="w-full h-full z-10"
+              objectFit="contain"
+              src={client === "Kalki" ? bannerImg : img1}
+            />
+          </div>
+          <div
+            className={`absolute -top-10 max-h-60 max-w-xs ${
+              idx % 2 === 0 ? "right-0" : "left-0"
+            }`}
+          >
+            <Image height={250} width={350} src={img2} />
+          </div>
         </div>
-        <div
-          className={`absolute -top-10 max-h-60 max-w-xs ${
-            idx % 2 === 0 ? "right-0" : "left-0"
-          }`}
-        >
-          <Image height={250} width={350} src={img2} />
-        </div>
-      </div>
-
+      </Link>
       <div className="w-11/12 mx-auto space-y-8">
         <h5>{client}</h5>
         <Link href={route}>
