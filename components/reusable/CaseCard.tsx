@@ -19,7 +19,7 @@ function CaseCard({
   route: string;
   img1: StaticImageData;
   img2: StaticImageData;
-  bannerImg?: StaticImageData;
+  bannerImg: StaticImageData;
   idx: number;
   tags: string[];
 }) {
