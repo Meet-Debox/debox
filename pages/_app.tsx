@@ -73,13 +73,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
       {/* Linkedin */}
       <Script id="linkedin-tag" strategy="lazyOnload" type="text/javascript">
-        <Script type="text/javascript">
+        <Script id="linkedin-tag2" type="text/javascript">
           {/* _linkedin_partner_id = "188619"; */}
           {`window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
             window._linkedin_data_partner_ids.push(188619);`}
         </Script>
 
-        <Script type="text/javascript">
+        <Script id="linkedin-tag3" type="text/javascript">
           {`(function(l) {
             if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
             window.lintrk.q=[]}
