@@ -205,17 +205,17 @@ const kalki = {
         "We had detailed sessions with each stakeholder of the management team to understand the need for this exercise and what according to them are the challenges that they want to be addressed at the end of the project",
     },
     {
-      title: "Team interactions to identify areas of improvement:",
+      title: "Team interactions to identify areas of improvement",
       description:
         "We had interactions with every unique role in the organization and understood their roles and deep-dived into the challenges faced by them and what according to them can be done better",
     },
     {
-      title: "Data gathering and analysis:",
+      title: "Data gathering and analysis",
       description:
         "We started seeking and analyzing data and understood there was limited to no data and most of the work was done basis historic experience or individuals' gut feelings",
     },
     {
-      title: "Roadmap planning:",
+      title: "Roadmap planning",
       description:
         "We re-sat with Management and mapped out where they envision themselves in the next 2-3 years and build the entire project strategy to achieve the outcome",
     },

@@ -89,17 +89,17 @@ const Khel = {
     "How we helped an Online Gaming company improve Customer Onboarding and Retention",
   approachList: [
     {
-      title: "Study and Benchmarking of User Journey:",
+      title: "Study and Benchmarking of User Journey",
       description:
         "We evaluated the entire User Journey from the first brand interaction, app download, app launch, first interaction to the first gameplay. We also benchmarked the journey within the gaming industry and outside the industry with brands/apps that have built an engaging user journey.",
     },
     {
-      title: "Areas of improvement:",
+      title: "Areas of improvement",
       description:
         "We identified areas of improvement and evaluated the current data for conversion (depositors). We presented our findings and solution to the management and started working on the deployment.",
     },
     {
-      title: "Zeroing upon the problem statement:",
+      title: "Zeroing upon the problem statement",
       description:
         "We identified several gaps in the User Journey, the journey was abrupt and lacked any engagement and personalization. The journey and communications within the app were extremely transactional and focused only on driving business.",
     },

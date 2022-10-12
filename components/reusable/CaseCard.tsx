@@ -29,24 +29,31 @@ function CaseCard({
       className={` space-y-8 place-self-center ${idx % 3 === 1 ? "" : ""}`}
       key={client}
     >
-      <Link href={route}>
-        <div className="relative">
-          <div className="h-82 w-[20rem] mx-auto">
-            <Image
-              className="w-full h-full z-10"
-              objectFit="contain"
-              src={client === "Kalki" ? bannerImg : img1}
-            />
-          </div>
-          <div
-            className={`absolute -top-10 max-h-60 max-w-xs ${
-              idx % 2 === 0 ? "right-0" : "left-0"
-            }`}
-          >
-            <Image height={250} width={350} src={img2} />
-          </div>
-        </div>
-      </Link>
+      <div className="relative cursor-pointer">
+        <Link href={route}>
+          <>
+            <div className="h-82 w-[20rem] mx-auto">
+              <Image
+                className="w-full h-full z-10"
+                objectFit="contain"
+                src={client === "Kalki" ? bannerImg : img1}
+              />
+            </div>
+            <div
+              className={`absolute -top-10 max-h-60 max-w-xs ${
+                idx % 2 === 0 ? "right-0" : "left-0"
+              }`}
+            >
+              <Image
+                height={250}
+                width={350}
+                src={client === "KhelPlay Rummy" ? bannerImg : img2}
+              />
+            </div>
+          </>
+        </Link>
+      </div>
+
       <div className="w-11/12 mx-auto space-y-8">
         <h5>{client}</h5>
         <Link href={route}>

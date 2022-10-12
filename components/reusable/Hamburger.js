@@ -134,7 +134,7 @@ const Hamburger = ({ state, handleMenu }) => {
                 <h3>Our Story</h3>
                 <p>
                   {
-                    "From redesigning and successful deployment of the Pan India Supply Chain process for Nippo Batteries to designing and developing India's first true hyperlocal Job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
+                    "From redesigning and successful deployment of the Pan India Supply Chain process for Nippo Batteries to designing and developing InRadius - India's first true hyperlocal Job and Talent search platform, Debox has come a long way in solving business and real-life problems through their logical reasoning and innovative thinking."
                   }
                 </p>
               </div>

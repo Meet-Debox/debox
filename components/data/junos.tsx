@@ -121,12 +121,12 @@ const junos = {
     "How we helped a fast-growing pizza chain structure their growth plan and drive efficiency",
   approachList: [
     {
-      title: "Data analysis and insights:",
+      title: "Data analysis and insights",
       description:
         "We gathered the sales data for the last 18 months and deep-dived to identify the trends, store-wise sales, category-wise contribution, highest contributors, lowest contributors, internal sales contribution, 3rd party sales contribution, profitability etc.",
     },
     {
-      title: "Areas of Improvement:",
+      title: "Areas of Improvement",
       description:
         "Based on the analysis and insights we identified areas of improvement and bucketed them into Process Improvements, Operational Controls, Financial Controls and Strategic Focus areas.",
     },

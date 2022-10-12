@@ -121,12 +121,12 @@ const bayowl = {
     "Check how we helped a offline music studio build India's first Online Studio service platform.",
   approachList: [
     {
-      title: "Defining the project scope:",
+      title: "Defining the project scope",
       description:
         "We understood the business and service flow and how offline services can be engineered for Online fulfilment and what limitations or challenges can occur in the online services.",
     },
     {
-      title: "Service Listing and Structuring:",
+      title: "Service Listing and Structuring",
       description:
         "The services structure was extremely complex as there are more than 78 services that were categorized into 2 main categories, 6 subcategories, 16 service types, 30 sub-services that had more than 30 variables. ",
     },
@@ -136,12 +136,12 @@ const bayowl = {
         "We had to build a sustainable and simpler code structure that can be updated easily in the future.",
     },
     {
-      title: "Cloud Management and Complexity:",
+      title: "Cloud Management and Complexity",
       description:
         "The online services required the uploading and downloading of multiple files (up to 60 at a time) each ranging on an average of 100-200 MBs. There were a lot of challenges in managing such vast data as it was to be managed at multiple stages of the service journey at the local user level, cloud and at engineer level.",
     },
     {
-      title: "Backend Management:",
+      title: "Backend Management",
       description:
         "We had to build a backend management platform to assign the Online Services to different team members, team members will be working on these services and reupload the engineered files for customer review and the process involved a few of rounds of back and forth.",
     },

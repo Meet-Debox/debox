@@ -18,37 +18,41 @@ function CaseStudiesMain() {
           >
             {/* inset-x-24 -inset-y-14 */}
             <div className={`md:w-1/2 grid place-items-center`}>
-              <div className="w-full relative">
-                <div
-                  className={clsx(
-                    "hidden md:absolute",
-                    idx % 2 === 0 ? "top-0 left-0" : " top-0 left-0"
-                  )}
-                >
-                  <Image
-                    src={study.side2}
-                    width={391}
-                    height={385}
-                    objectFit="contain"
-                    className={
-                      "w-full h-full object-contain object-left-bottom -ml-20 "
-                    }
-                  />
+              <Link href={study.route}>
+                <div className="w-full relative cursor-pointer">
+                  <div
+                    className={clsx(
+                      "hidden md:absolute",
+                      idx % 2 === 0 ? "top-0 left-0" : " top-0 left-0"
+                    )}
+                  >
+                    <Image
+                      src={study.side2}
+                      width={391}
+                      height={385}
+                      objectFit="contain"
+                      className={
+                        "w-full h-full object-contain object-left-bottom -ml-20 "
+                      }
+                    />
+                  </div>
+                  <div className="w-full h-full">
+                    <Image
+                      // width={500}
+                      // width={589}
+                      // height={674}
+                      objectFit="contain"
+                      className="w-full h-full object-contain object-center"
+                      alt={study.client + "Consulted by Debox"}
+                      src={
+                        study.client === "Kalki"
+                          ? study.heroBanner
+                          : study.side1
+                      }
+                    />
+                  </div>
                 </div>
-                <div className="w-full h-full">
-                  <Image
-                    // width={500}
-                    // width={589}
-                    // height={674}
-                    objectFit="contain"
-                    className="w-full h-full object-contain object-center"
-                    alt={study.client + "Consulted by Debox"}
-                    src={
-                      study.client === "Kalki" ? study.heroBanner : study.side1
-                    }
-                  />
-                </div>
-              </div>
+              </Link>
             </div>
 
             <div className=" md:w-1/2 text-lg md:text-2xl flex flex-col gap-4 sm:gap-7 md:gap-12">

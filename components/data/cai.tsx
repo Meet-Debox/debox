@@ -116,12 +116,12 @@ const cai = {
         "We went through a series of interactions with the management team in identifying the various bottlenecks and challenges where they were getting dragged and were spending time that could have been spent on business growth and expansion.",
     },
     {
-      title: "Bucketing of problems/challenges:",
+      title: "Bucketing of problems/challenges",
       description:
         "We bucketed the issues as Strategic, Operational and People related and bifurcated them as issues that impact growth and issues that have arisen due to lack of structure and capability development.",
     },
     {
-      title: "Validation of the problem statement:",
+      title: "Validation of the problem statement",
       description:
         "We understood every role from the Management and their expectations from those roles post which we interacted with the people manning those roles and understood their understanding of those roles and the challenges faced by them. This gave us clarity on whether the challenges were due to communication gaps, capability gaps or lack of intent from those individuals.",
     },
