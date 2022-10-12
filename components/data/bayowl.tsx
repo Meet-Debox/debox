@@ -42,29 +42,6 @@ const frameworkList = [
       );
     },
   },
-  {
-    title: "Performance and Sustainability Framework",
-    icon: () => <PerformanceFramework />,
-    content() {
-      return (
-        <ul>
-          <li>- Data Trackers (Individual and team)</li>
-          <li>- Dashboards (Functional, Stores and Business)</li>
-        </ul>
-      );
-    },
-  },
-];
-
-const deliveredList = [
-  "We worked with the Management in defining the organization's Mission, Vision and Values, this helped in building a solid foundation for driving change, bringing people together in achieving a common goal",
-  "We created detailed Job Descriptions for all roles along with Key Performance Indicators and Data Trackers and explained them to all individuals",
-  "We created checklists, processes and workflows and trained every individual to drive it to success",
-  "We created Dashboards (Daily/Weekly/Fortnight/Monthly) for each Store, Department, Processes that focused on driving business objectives and performance",
-  "We reworked on the HR/People practices and policies and created an Employee Handbook and communicated the same across the organization",
-  "We created an incentive/reward program for the Sales team to drive business along with rewarding performers",
-  "We started daily huddle meetings across all stores and across departments to review the wins and lost opportunities on daily basis. These huddle meetings were lead by different individuals every day, thus developing every individual.",
-  "We suggested changes in the Customer Journey / Touchpoints at the stores that can have a negative impact",
 ];
 
 const keyFindings = [
@@ -98,11 +75,6 @@ const bayowl = {
         <p>
           {
             "Bay Owl Studios is a an ultra-modern and contemporary commercial recording and post production audio facility. "
-          }
-        </p>
-        <p>
-          {
-            " The CAI Store has served more than 2,00,000 happy customers to date and has grown sixfold since March 2020."
           }
         </p>
         <p>
@@ -172,10 +144,10 @@ const bayowl = {
             </h4>
 
             <ul className="flex flex-col gap-10 overflow-hidden mb-8 ">
-              {keyFindings.map((delItem, idx) => (
+              {keyFindings.map((delItem: any, idx: number) => (
                 <div className="relative w-full" key={delItem}>
                   {/* Sketch Arrows For Smaller Screens */}
-                  {idx < deliveredList.length - 1 && (
+                  {idx < keyFindings.length - 1 && (
                     <Arrow1 className="md:hidden h-12 w-10 absolute bottom-0 right-0 -mb-11" />
                   )}
                   <li
@@ -187,7 +159,7 @@ const bayowl = {
                     )}
                   >
                     {/* Sketch Arrows for MD+ */}
-                    {idx < deliveredList.length - 1 && (
+                    {idx < keyFindings.length - 1 && (
                       <Arrow1
                         className={clsx(
                           "hidden md:block h-14 w-14 absolute -bottom-4 -mb-11",

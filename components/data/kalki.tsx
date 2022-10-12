@@ -11,27 +11,15 @@ import Arrow1 from "../reusable/icons/Arrow1";
 import ObjectiveFramework from "../reusable/icons/ObjectiveFramework";
 import PeopleFramework from "../reusable/icons/PeopleFramework";
 import ProcessFramework from "../reusable/icons/ProcessFramework";
+import DigitalFramework from "../reusable/icons/DigitalFramework";
+import PerformanceFramework from "../reusable/icons/PerformanceFramework";
 
 import FrameworkCard from "../reusable/FrameworkCard";
 
 const frameworkList = [
   {
     title: "Objective and Value Setting Framework",
-    icon() {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          className="h-8 w-8"
-          viewBox="0 0 16 16"
-        >
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-          <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
-          <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-        </svg>
-      );
-    },
+    icon: () => <ObjectiveFramework />,
     content() {
       return (
         <ul>
@@ -43,17 +31,7 @@ const frameworkList = [
   },
   {
     title: "People Practices Framework",
-    icon() {
-      return (
-        <svg
-          className="h-8 w-8 group-hover:fill-white"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path d="M224 0c70.7 0 128 57.3 128 128s-57.3 128-128 128S96 198.7 96 128 153.3 0 224 0zm-14.9 359.2l-18.6-31c-6.4-10.7 1.3-24.2 13.7-24.2h39.5c12.4 0 20.1 13.6 13.7 24.2l-18.6 31 33.4 123.9 39.5-161.2c77.2 12 136.3 78.8 136.3 159.4 0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-80.6 59.1-147.4 136.3-159.4l39.5 161.2 33.4-123.9z"></path>
-        </svg>
-      );
-    },
+    icon: () => <PeopleFramework />,
     content() {
       return (
         <ul>
@@ -68,17 +46,7 @@ const frameworkList = [
   },
   {
     title: "Process Improvement Framework",
-    icon() {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-          className="w-8 h-8 group-hover:fill-white"
-        >
-          <path d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 101.2 150.1 40c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 261.2l55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm-64 160c0-17.7 14.3-32 32-32h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
-        </svg>
-      );
-    },
+    icon: () => <ProcessFramework />,
     content() {
       return (
         <ul>
@@ -98,17 +66,7 @@ const frameworkList = [
   },
   {
     title: "Digital Transformation Framework",
-    icon() {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-          className="w-8 h-8 group-hover:fill-white"
-        >
-          <path d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 101.2 150.1 40c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 261.2l55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm-64 160c0-17.7 14.3-32 32-32h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
-        </svg>
-      );
-    },
+    icon: () => <DigitalFramework />,
     content() {
       return (
         <ul>
@@ -120,17 +78,7 @@ const frameworkList = [
   },
   {
     title: "Performance and Sustainability Framework",
-    icon() {
-      return (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-          className="w-8 h-8 group-hover:fill-white"
-        >
-          <path d="M184.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 101.2 150.1 40c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L39 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L95 261.2l55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM256 96c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h224c17.7 0 32 14.3 32 32s-14.3 32-32 32H288c-17.7 0-32-14.3-32-32zm-64 160c0-17.7 14.3-32 32-32h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zM80 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path>
-        </svg>
-      );
-    },
+    icon: () => <PerformanceFramework />,
     content() {
       return (
         <ul>
@@ -181,7 +129,7 @@ const kalki = {
       <div className="space-y-4">
         <p>
           {
-            "Born in Mumbai, India in 2007, KALKI evokes the very spirit of the city it was founded in. An upstart, innovative, and dynamic brand – KALKI – offers the best of contemporary, ethnic Indian fashion and fusion-wear styles. Staying true to the brand’s unique promise of premium and wearable fashion, KALKI unveils fresh collections and all-new designs throughout the fashion calendar."
+            "Born in Mumbai, India in 2007, KALKI evokes the very spirit of the city it was founded in. An upstart, innovative, and dynamic brand – KALKI – offers the best of contemporary, ethnic Indian fashion and fusion-wear styles. Staying true to the brand’s unique promise of premium and wearable fashion, KALKI unveils fresh collections and all-new designs throughout the fashion calendar. "
           }
         </p>
         <p>
@@ -200,7 +148,7 @@ const kalki = {
     "How we helped a fast-growing women's fashion brand to scale to newer heights by designing a Performance Management process along with data trackers and dashboards",
   approachList: [
     {
-      title: "Zeroing upon the problem statement",
+      title: "Zeroing upon the challenges and opportunity statement",
       description:
         "We had detailed sessions with each stakeholder of the management team to understand the need for this exercise and what according to them are the challenges that they want to be addressed at the end of the project",
     },
@@ -322,7 +270,7 @@ const kalki = {
       <div className="space-y-4">
         <p>
           {
-            "Kalki Fashion has established itself as one of the leading brands when it comes to Bridal Wear and Indian Ethnic Wear. "
+            "Kalki Fashion has established itself as one of the leading brands when it comes to Bridal Wear and Indian Ethnic Wear."
           }
         </p>
         <p>

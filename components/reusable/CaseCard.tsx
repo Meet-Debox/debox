@@ -31,7 +31,7 @@ function CaseCard({
     >
       <div className="relative cursor-pointer">
         <Link href={route}>
-          <>
+          <div>
             <div className="h-82 w-[20rem] mx-auto">
               <Image
                 className="w-full h-full z-10"
@@ -50,7 +50,7 @@ function CaseCard({
                 src={client === "KhelPlay Rummy" ? bannerImg : img2}
               />
             </div>
-          </>
+          </div>
         </Link>
       </div>
 
