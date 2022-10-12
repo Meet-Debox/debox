@@ -61,17 +61,18 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       {/* Google Tag Manager */}
       <Script
+        id="google-tags"
         strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=UA-101882907-1"
       />
-      <Script strategy="lazyOnload">
+      <Script id="google-tags-2" strategy="lazyOnload">
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'UA-101882907-1');`}
       </Script>
       {/* Linkedin */}
-      <Script strategy="lazyOnload" type="text/javascript">
+      <Script id="linkedin-tag" strategy="lazyOnload" type="text/javascript">
         <Script type="text/javascript">
           {/* _linkedin_partner_id = "188619"; */}
           {`window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
