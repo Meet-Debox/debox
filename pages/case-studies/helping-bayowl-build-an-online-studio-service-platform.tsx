@@ -77,9 +77,9 @@ function BayOwl() {
 
       {/* Testimonials */}
 
-      {/* {typeof post.testimonials !== "undefined" && (
+      {typeof post.testimonials !== "undefined" && (
         <Testimonial list={post.testimonials} />
-      )} */}
+      )}
 
       <SurveyCTAStrip isDark />
 

@@ -3,7 +3,7 @@ import logo from "../../public/studies/BayOwl/logo.png";
 import HeroBanner from "../../public/studies/BayOwl/Hero_Banner.jpg";
 import SideImg1 from "../../public/studies/BayOwl/Side1.jpg";
 import SideImg2 from "../../public/studies/BayOwl/Side2.jpg";
-// import Testimonial1 from "../../public/studies/CAI/Aradh.png";
+import Testimonial1 from "../../public/studies/BayOwl/Testimonial.png";
 
 // Icons
 
@@ -207,18 +207,15 @@ const bayowl = {
       </>
     );
   },
-  // testimonials: [
-  //   {
-  //     by: "Ritika Gupta",
-  //     img: TestimonialImg,
-  //     designation: "Director",
-  //     content:
-  //       "We had the privilege to work with Debox at Kalki they really helped us structure all our reports and also give a defined checklist and tasks for every team. Because of that, we can now quantify the work done in every department it has really helped us in improving our efficiency and productivity. They took tremendous effort in understanding how our business works and customize reports and requirements as per our needs.",
-  //   },
-  // ],
-  // refLinks: [
-  //   "https://yourstory.com/smbstory/indian-shoemaker-brand-coronavirus-impact-footwear-industry/amp",
-  // ],
+  testimonials: [
+    {
+      by: "Varun Parikh",
+      img: Testimonial1,
+      designation: "Owner",
+      content:
+        "One of the best decisions we've made at Bay Owl Studios was going with Debox. We've been looking to expand into unknown territory with the studio, and have often been difficult with our asks of them. Darshan and his team have been fantastic throughout and have delivered a product that we're not only most excited to launch, but also develop further with Debox. Will definitely be recommending them to anybody that has any web or software requirement.",
+    },
+  ],
 };
 
 export default bayowl;

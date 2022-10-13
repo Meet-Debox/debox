@@ -14,7 +14,7 @@ function Testimonial({ list }: { list: any[] }) {
           <div className="relative">
             <span className="italic relative">
               <svg
-                className="absolute top-0 left-0 transform -translate-x-6 md:-translate-x-8 -translate-y-4 h-6 w-6 md:h-8 md:w-8 text-accent"
+                className="absolute top-0 left-0 transform -translate-x-6 md:-translate-x-8 -translate-y-4 h-5 w-5 md:h-6 md:w-6 text-accent"
                 fill="currentColor"
                 viewBox="0 0 32 32"
                 aria-hidden="true"
@@ -23,7 +23,7 @@ function Testimonial({ list }: { list: any[] }) {
               </svg>
               {el.content}
               <svg
-                className="absolute bottom-0 right-0 transform translate-x-10 -translate-y-1 h-6 w-6 md:h-8 md:w-8 text-accent rotate-180"
+                className="absolute bottom-0 right-0 transform translate-x-10 -translate-y-1 h-5 w-5 md:h-6 md:w-6 text-accent rotate-180"
                 fill="currentColor"
                 viewBox="0 0 32 32"
                 aria-hidden="true"
