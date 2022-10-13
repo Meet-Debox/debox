@@ -209,7 +209,7 @@ const cai = {
   },
   testimonials: [
     {
-      by: "Aradhana Minalwala",
+      by: "Aradhana Minawala",
       img: Testimonial1,
       designation: "Partner",
       content:
