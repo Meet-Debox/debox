@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Debox Consulting - Business Consulting Firm</title>
         <meta
           name="description"
-          content="We partner with businesses to build a sustainable growth path through synergies of people, processes and technology."
+          content="Debox is a business solutions firm that focuses on problem-solving through the use of data, logical reasoning and people-centred approach. We have a stellar record of delivering high-impact projects that have helped scale many startups, family-managed businesses and midsize corporates."
         />
       </Head>
       {/* Facebook Pixel */}
