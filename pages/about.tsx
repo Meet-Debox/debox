@@ -134,7 +134,7 @@ const About: NextPage = () => {
       </section>
       ` {/* Who We Are */}`
       <section className="cont text-center space-y-10 mx-auto max-w-5xl w-11/12 ">
-        <Heading>Who we are</Heading>
+        <Heading>Who We Are</Heading>
         <p className="text-justify">
           {
             "Every member of Debox comes from different backgrounds and has a variety of experiences encompassing entrepreneurship, human resources, marketing, finance, design, commerce, and technology. Our members have worked across companies of various sizes across industries and have gained knowledge and expertise in driving change and building high-performance organizations and cultures."
@@ -208,7 +208,7 @@ const About: NextPage = () => {
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-10">
-              <Heading>How we work</Heading>
+              <Heading>How We Work</Heading>
               <div className="mt-6 text-black space-y-6 text-justify">
                 <p className="">
                   {
@@ -230,7 +230,7 @@ const About: NextPage = () => {
       </section>
       <section className="bg-light">
         <section className="cont text-center space-y-10 mx-auto max-w-5xl">
-          <Heading>Explore our work</Heading>
+          <Heading>Explore Our Work</Heading>
           <p className="text-sm md:text-lg">
             {"We love working on complex business challenges, see "}
             <Link href="/case-studies">

@@ -2,17 +2,17 @@ import React from "react";
 import Heading from "../Heading";
 import main from "../../data";
 import CaseCard from "../CaseCard";
+import randomise from "../../../utils/shuffleArray";
 
 function MoreStudies({ title }: { title: string }) {
   return (
     <>
       <div className="max-w-7xl w-10/12 mx-auto cont ">
         <Heading>
-          <span className="text-center block">Read another success story.</span>
+          <span className="text-center block">Read Another Success Story.</span>
         </Heading>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-20 place-items-stretch  mx-auto">
-          {main
-            .filter((study) => study.title != title)
+          {randomise(main.filter((study) => study.title != title))
             .slice(0, 3)
             .map((study, idx) => (
               <CaseCard

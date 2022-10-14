@@ -77,7 +77,7 @@ function TimelineInfo({
               <p>{timeline}</p>
             </div>
             <div className="space-y-4">
-              <Heading>Project Info</Heading>
+              <Heading>Project Title</Heading>
               <p>{projInfo}</p>
             </div>
           </div>

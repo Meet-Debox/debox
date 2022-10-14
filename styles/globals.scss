@@ -415,7 +415,8 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
     background-color calc(var(--duration) / 4) var(--ease),
     background-size var(--duration) var(--ease);
 
-  &:hover {
+  &:hover,
+  &.active {
     color: var(--color-text-highlight);
     background-size: 100% 100%;
   }
