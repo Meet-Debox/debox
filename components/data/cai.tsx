@@ -81,7 +81,7 @@ const cai = {
   slug: "helping-cai-structure-their-growth",
   route: `/case-studies/helping-cai-structure-their-growth`,
   title:
-    "Check how we helped a fast-growing women's footwear startup to structure their growth.",
+    "How we helped a fast-growing women's footwear startup to structure their growth.",
   industry: "Fashion",
   tags: [],
   about() {

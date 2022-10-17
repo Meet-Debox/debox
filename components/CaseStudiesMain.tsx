@@ -60,7 +60,8 @@ function CaseStudiesMain() {
               <Link href={study.route}>
                 <h4 className="font-heading font-bold ">
                   <span className="text-highlight !cursor-pointer">
-                    {study.title}
+                    Check {/* Changing H of the how to lowercase  */}
+                    {study.title.charAt(0).toLowerCase() + study.title.slice(1)}
                   </span>
                 </h4>
               </Link>

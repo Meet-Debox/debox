@@ -58,7 +58,10 @@ function CaseCard({
         <h5>{client}</h5>
         <Link href={route}>
           <h4 className="font-heading font-bold cursor-pointer">
-            <span className="text-highlight">{title}</span>
+            <span className="text-highlight">
+              {" "}
+              Check {title.charAt(0).toLowerCase() + title.slice(1)}
+            </span>
           </h4>
         </Link>
         <div className="space-x-4">

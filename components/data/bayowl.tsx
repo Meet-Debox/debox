@@ -66,7 +66,7 @@ const bayowl = {
   slug: "helping-bayowl-build-an-online-studio-service-platform",
   route: `/case-studies/helping-bayowl-build-an-online-studio-service-platform`,
   title:
-    "Check how we helped an offline music studio build India's first Online Studio service platform.",
+    "How we helped an offline music studio build India's first Online Studio service platform.",
   industry: "Music",
   tags: ["Tech"],
   about() {
@@ -90,7 +90,7 @@ const bayowl = {
     "The Founder (Varun Parikh) wanted to redesign the website with a fresh new look that is more creative and immersive with their target audience (singers and musicians). Along with the website, the requirement was to build India's first Online Studio service platform.",
   timeline: "July 2022 - September 2022",
   projInfo:
-    "Check how we helped an offline music studio build India's first Online Studio service platform.",
+    "How we helped an offline music studio build India's first Online Studio service platform.",
   approachList: [
     {
       title: "Defining the project scope",
