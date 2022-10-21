@@ -7,7 +7,7 @@ function TimelineInfo({
   timeline,
   projInfo,
 }: {
-  timelineImg: StaticImageData;
+  timelineImg: StaticImageData | string;
   timeline: string;
   projInfo: string;
 }) {

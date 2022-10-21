@@ -1,11 +1,10 @@
 import clsx from "clsx";
-import logo from "../../public/studies/BayOwl/logo.png";
 
 // Icons
 
 import Arrow1 from "../reusable/icons/Arrow1";
 import ProcessFramework from "../reusable/icons/ProcessFramework";
-import PerformanceFramework from "../reusable/icons/PerformanceFramework";
+
 import DigitalFramework from "../reusable/icons/DigitalFramework";
 
 import FrameworkCard from "../reusable/FrameworkCard";
@@ -52,7 +51,7 @@ const keyFindings = [
 
 const bayowl = {
   client: "Bay Owl Studios",
-  logo: logo,
+  logo: "https://res.cloudinary.com/debox/image/upload/v1666336182/Debox-New/studies/BayOwl/logo_riwclh.webp",
   heroBanner:
     "https://res.cloudinary.com/debox/image/upload/v1666336183/Debox-New/studies/BayOwl/Hero_Banner_crqake.webp",
   side1:

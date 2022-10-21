@@ -6,7 +6,7 @@ function AboutClient({
   sideImg,
   aboutJsx,
 }: {
-  sideImg: StaticImageData;
+  sideImg: StaticImageData | string;
   aboutJsx: () => React.ReactNode;
 }) {
   return (

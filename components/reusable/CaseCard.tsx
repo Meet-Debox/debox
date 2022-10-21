@@ -17,9 +17,9 @@ function CaseCard({
   client: string;
   title: string;
   route: string;
-  img1: StaticImageData;
-  img2: StaticImageData;
-  bannerImg: StaticImageData;
+  img1: StaticImageData | string;
+  img2: StaticImageData | string;
+  bannerImg: StaticImageData | string;
   idx: number;
   tags: string[];
 }) {

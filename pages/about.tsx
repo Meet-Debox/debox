@@ -15,9 +15,6 @@ import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
 
 // -- Hooks
 
-// - Media
-import office from "../assets/Office.webp";
-import Abt2 from "../assets/Abt2.webp";
 // - Data
 const stats = [
   { label: "Solution Designers", value: "20+" },
@@ -101,9 +98,13 @@ const About: NextPage = () => {
                   alt=""
                 /> */}
                 <Image
+                  height={718}
+                  width={850}
                   objectFit="cover"
                   className="h-full w-full absolute inset-0 top-0 left-0"
-                  src={office}
+                  src={
+                    "https://res.cloudinary.com/debox/image/upload/v1666350563/Debox-New/About/Office_y3pdvi.webp"
+                  }
                 />
               </div>
             </div>
@@ -190,16 +191,20 @@ const About: NextPage = () => {
               </svg>
             </div>
             <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-10">
-              <div className="relative overflow-hidden max-h-[28rem]">
+              <div className="relative overflow-hidden max-h-[28rem] flex items-center">
                 {/* <img
                   className="absolute inset-0 h-full w-full object-cover"
                   src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
                 /> */}
                 <Image
-                  objectFit="cover"
+                  objectFit="contain"
+                  height={960}
+                  width={718}
                   className="h-full w-full absolute inset-0 top-0 left-0"
-                  src={Abt2}
+                  src={
+                    "https://res.cloudinary.com/debox/image/upload/v1666350568/Debox-New/About/Abt2_zkzxhd.webp"
+                  }
                 />
               </div>
             </div>

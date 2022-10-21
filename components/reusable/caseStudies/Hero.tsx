@@ -9,9 +9,9 @@ function Hero({
   title,
   logoImg,
 }: {
-  bannerImg: StaticImageData;
+  bannerImg: StaticImageData | string;
   industry: string;
-  logoImg: StaticImageData;
+  logoImg: StaticImageData | string;
   title: string;
 }) {
   const isDesktop = useMediaQuery("(min-width: 1000px)");
