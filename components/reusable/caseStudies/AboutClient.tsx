@@ -11,7 +11,7 @@ function AboutClient({
 }) {
   return (
     <section className="relative cont">
-      <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div className="lg:mx-auto lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24 lg:place-items-center">
         <div className="relative sm:py-16 lg:py-0 lg:order-2 overflow-clip">
           <div
             aria-hidden="true"
@@ -51,9 +51,11 @@ function AboutClient({
             </svg>
           </div>
           <div className="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-10">
-            <div className="relative overflow-hidden max-h-[28rem]">
+            <div className="relative overflow-hidden max-h-[28rem] flex items-center">
               <Image
-                objectFit="cover"
+                height={855}
+                width={812}
+                objectFit="contain"
                 className="h-full w-full absolute inset-0 top-0 left-0"
                 src={sideImg}
               />

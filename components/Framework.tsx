@@ -4,13 +4,13 @@ import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import { useState } from "react";
 import Heading from "./reusable/Heading";
 
-import I1 from "../assets/Frmwk1.png";
-import I2 from "../assets/Frmwk2.png";
-import I3 from "../assets/Frmwk3.png";
-import I4 from "../assets/Frmwk4.png";
-import I5 from "../assets/Frmwk5.png";
-import I6 from "../assets/Frmwk6.png";
-import I7 from "../assets/Frmwk7.png";
+import I1 from "../assets/Frmwk1.webp";
+import I2 from "../assets/Frmwk2.webp";
+import I3 from "../assets/Frmwk3.webp";
+import I4 from "../assets/Frmwk4.webp";
+import I5 from "../assets/Frmwk5.webp";
+import I6 from "../assets/Frmwk6.webp";
+import I7 from "../assets/Frmwk7.webp";
 
 // import Serv4 from '../public/Serv4.jpg'
 

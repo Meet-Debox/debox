@@ -34,6 +34,8 @@ function CaseCard({
           <div>
             <div className="h-82 w-[20rem] mx-auto">
               <Image
+                width={411}
+                height={354}
                 className="w-full h-full z-10"
                 objectFit="contain"
                 src={client === "Kalki" ? bannerImg : img1}

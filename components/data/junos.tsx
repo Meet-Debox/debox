@@ -1,9 +1,5 @@
 import clsx from "clsx";
-import logo from "../../public/Logo/10.jpg";
-import HeroBanner from "../../public/studies/Junos/Hero_Banner.jpg";
-import SideImg1 from "../../public/studies/Junos/Side1.png";
-import SideImg2 from "../../public/studies/Junos/Side2.png";
-import Testimonial1 from "../../public/studies/Junos/Testimonial1.png";
+import logo from "../../public/Logo/10.webp";
 
 // Icons
 
@@ -90,11 +86,14 @@ const frameworkList = [
 const junos = {
   client: "Juno's Pizza",
   logo: logo,
-  heroBanner: HeroBanner,
-  side1: SideImg1,
+  heroBanner:
+    "https://res.cloudinary.com/debox/image/upload/v1666336190/Debox-New/studies/Junos/Hero_Banner_ikqzii.webp",
+  side1:
+    "https://res.cloudinary.com/debox/image/upload/v1666336186/Debox-New/studies/Junos/Side1_liznu0.webp",
   break1: "junos-breakImg-1",
   break2: "junos-breakImg-2",
-  side2: SideImg2,
+  side2:
+    "https://res.cloudinary.com/debox/image/upload/v1666336186/Debox-New/studies/Junos/Side2_fjhl5w.webp",
   slug: "helping-junos-grow-and-drive-efficiency",
   route: `/case-studies/helping-junos-grow-and-drive-efficiency`,
   title:
@@ -291,7 +290,7 @@ const junos = {
   testimonials: [
     {
       by: "Aditya Shah",
-      img: Testimonial1,
+      img: "https://res.cloudinary.com/debox/image/upload/v1666336186/Debox-New/studies/Junos/Testimonial1_l4eok9.webp",
       designation: "Partner",
       content:
         "Debox are very focused in their approach and data driven to achieve results. Working with them was a wonderful experience!",

@@ -16,8 +16,8 @@ import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
 // -- Hooks
 
 // - Media
-import office from "../assets/Office.png";
-import Abt2 from "../assets/Abt2.png";
+import office from "../assets/Office.webp";
+import Abt2 from "../assets/Abt2.webp";
 // - Data
 const stats = [
   { label: "Solution Designers", value: "20+" },

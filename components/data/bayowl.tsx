@@ -1,9 +1,5 @@
 import clsx from "clsx";
 import logo from "../../public/studies/BayOwl/logo.png";
-import HeroBanner from "../../public/studies/BayOwl/Hero_Banner.jpg";
-import SideImg1 from "../../public/studies/BayOwl/Side1.jpg";
-import SideImg2 from "../../public/studies/BayOwl/Side2.jpg";
-import Testimonial1 from "../../public/studies/BayOwl/Testimonial.png";
 
 // Icons
 
@@ -57,11 +53,14 @@ const keyFindings = [
 const bayowl = {
   client: "Bay Owl Studios",
   logo: logo,
-  heroBanner: HeroBanner,
-  side1: SideImg1,
+  heroBanner:
+    "https://res.cloudinary.com/debox/image/upload/v1666336183/Debox-New/studies/BayOwl/Hero_Banner_crqake.webp",
+  side1:
+    "https://res.cloudinary.com/debox/image/upload/v1666336183/Debox-New/studies/BayOwl/Side1_yq2pmt.webp",
   break1: "bayowl-breakImg-1",
   break2: "bayowl-breakImg-2",
-  side2: SideImg2,
+  side2:
+    "https://res.cloudinary.com/debox/image/upload/v1666336184/Debox-New/studies/BayOwl/Side2_phzfup.webp",
   headTitle: "Helping Bayowl with an online platform - Debox Consulting",
   slug: "helping-bayowl-build-an-online-studio-service-platform",
   route: `/case-studies/helping-bayowl-build-an-online-studio-service-platform`,
@@ -210,7 +209,7 @@ const bayowl = {
   testimonials: [
     {
       by: "Varun Parikh",
-      img: Testimonial1,
+      img: "https://res.cloudinary.com/debox/image/upload/v1666336184/Debox-New/studies/BayOwl/Testimonial_itnvep.webp",
       designation: "Owner",
       content:
         "One of the best decisions we've made at Bay Owl Studios was going with Debox. We've been looking to expand into unknown territory with the studio, and have often been difficult with our asks of them. Darshan and his team have been fantastic throughout and have delivered a product that we're not only most excited to launch, but also develop further with Debox. Will definitely be recommending them to anybody that has any web or software requirement.",

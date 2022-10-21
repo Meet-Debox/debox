@@ -1,9 +1,5 @@
 import clsx from "clsx";
-import logo from "../../public/Logo/12.jpg";
-import HeroBanner from "../../public/studies/Kalki/Hero_Banner.jpeg";
-import SideImg2 from "../../public/studies/Kalki/Side2.png";
-import SideImg1 from "../../public/studies/Kalki/Side1.png";
-import Testimonial1 from "../../public/studies/Kalki/Testimonial.png";
+import logo from "../../public/Logo/12.webp";
 
 // Icons
 
@@ -112,11 +108,14 @@ const kalki = {
   client: "Kalki",
   headTitle: "Helping Kalki Scale - Debox Consulting",
   logo: logo,
-  heroBanner: HeroBanner,
-  side1: SideImg1,
+  heroBanner:
+    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Kalki/Hero_Banner_kxglnk.webp",
+  side1:
+    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Kalki/Side1_bpr3a3.webp",
   break1: "kalki-breakImg-1",
   break2: "kalki-breakImg-2",
-  side2: SideImg2,
+  side2:
+    "https://res.cloudinary.com/debox/image/upload/v1666336187/Debox-New/studies/Kalki/Side2_e4gbas.webp",
   slug: "helping-kalki-scale",
   route: `/case-studies/helping-kalki-scale`,
   title:
@@ -300,7 +299,7 @@ const kalki = {
   testimonials: [
     {
       by: "Ritika Gupta",
-      img: Testimonial1,
+      img: "https://res.cloudinary.com/debox/image/upload/v1666336187/Debox-New/studies/Kalki/Testimonial_gobnpf.webp",
       designation: "Director",
       content:
         "We had the privilege to work with Debox at Kalki they really helped us structure all our reports and also give a defined checklist and tasks for every team. Because of that, we can now quantify the work done in every department it has really helped us in improving our efficiency and productivity. They took tremendous effort in understanding how our business works and customize reports and requirements as per our needs.",

@@ -1,9 +1,5 @@
 import clsx from "clsx";
-import CAILogo from "../../public/Logo/05.jpg";
-import HeroBanner from "../../public/studies/CAI/Hero_Banner.png";
-import SideImg1 from "../../public/studies/CAI/Side1.png";
-import SideImg2 from "../../public/studies/CAI/Side2.png";
-import Testimonial1 from "../../public/studies/CAI/Aradh.png";
+import CAILogo from "../../public/Logo/05.webp";
 
 // Icons
 
@@ -72,11 +68,14 @@ const cai = {
   client: "CAI Store",
   headTitle: "Helping Cai Structure their Growth - Debox Consulting",
   logo: CAILogo,
-  heroBanner: HeroBanner,
-  side1: SideImg1,
+  heroBanner:
+    "https://res.cloudinary.com/debox/image/upload/v1666336186/Debox-New/studies/CAI/Hero_Banner_zg20s3.webp",
+  side1:
+    "https://res.cloudinary.com/debox/image/upload/v1666336185/Debox-New/studies/CAI/Side1_falfmb.webp",
   break1: "cai-breakImg-1",
   break2: "cai-breakImg-2",
-  side2: SideImg2,
+  side2:
+    "https://res.cloudinary.com/debox/image/upload/v1666336185/Debox-New/studies/CAI/Side2_pkscbt.webp",
 
   slug: "helping-cai-structure-their-growth",
   route: `/case-studies/helping-cai-structure-their-growth`,
@@ -210,7 +209,7 @@ const cai = {
   testimonials: [
     {
       by: "Aradhana Minawala",
-      img: Testimonial1,
+      img: "https://res.cloudinary.com/debox/image/upload/v1666336183/Debox-New/studies/CAI/Aradh_nf7xk8.webp",
       designation: "Partner",
       content:
         "Debox is very methodical in their ways. They not only understand the needs of the company but they take time and effort to speak to each employee and understand their needs and incorporate it within the `work `structure. Their re-structuring has already sorted our company in so many ways which has helped our business grow only because we have gotten structured so fast. They are the key solution to all problems and take care of each and every problem from start to finish!",

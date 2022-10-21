@@ -39,8 +39,8 @@ function CaseStudiesMain() {
                   <div className="w-full h-full">
                     <Image
                       // width={500}
-                      // width={589}
-                      // height={674}
+                      width={589}
+                      height={674}
                       objectFit="contain"
                       className="w-full h-full object-contain object-center"
                       alt={study.client + "Consulted by Debox"}

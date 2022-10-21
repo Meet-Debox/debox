@@ -1,15 +1,6 @@
-import clsx from "clsx";
-import logo from "../../public/Logo/14.jpg";
-import HeroBanner from "../../public/studies/Khel/Hero_Banner.jpg";
-import SideImg1 from "../../public/studies/Khel/Side1.jpg";
-import SideImg2 from "../../public/studies/Khel/Side2.jpg";
-// import Testimonial1 from "../../public/studies/CAI/Aradh.png";
-
+import logo from "../../public/Logo/14.webp";
 // Icons
-
-import Arrow1 from "../reusable/icons/Arrow1";
 import ProcessFramework from "../reusable/icons/ProcessFramework";
-
 import FrameworkCard from "../reusable/FrameworkCard";
 import ComFramework from "../reusable/icons/CommunicationFramework";
 
@@ -46,11 +37,14 @@ const Khel = {
   client: "KhelPlay Rummy",
   headTitle: "Helping Khel Structure their Growth - Debox Consulting",
   logo: logo,
-  heroBanner: HeroBanner,
-  side1: SideImg1,
+  heroBanner:
+    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Hero_Banner_paicad.webp",
+  side1:
+    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Side1_jsp3ye.webp",
   break1: "khelplay-breakImg-1",
   break2: "khelplay-breakImg-2",
-  side2: SideImg2,
+  side2:
+    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Khel/Side2_lp1ot6.webp",
   slug: "helping-khel-with-user-onboarding-and-retention",
   route: `/case-studies/helping-khel-with-user-onboarding-and-retention`,
   title:

@@ -1,10 +1,13 @@
-const withVideos = require('next-videos')
+
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 }
 
-module.exports = withVideos()
+module.exports = nextConfig
 

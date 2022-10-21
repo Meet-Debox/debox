@@ -21,8 +21,11 @@ function Hero({
       <div className="min-h-[35rem] md:h-screen max-w-[1920px]">
         {/* <img src={post.img[1]} alt="" srcset="" /> */}
         <Image
+          alt={title}
+          priority
           layout={isDesktop ? "fill" : "intrinsic"}
-          height={isDesktop ? undefined : "1200px"}
+          height={isDesktop ? undefined : "1800px"}
+          width={isDesktop ? undefined : "2000px"}
           src={bannerImg}
         />
       </div>
@@ -34,7 +37,7 @@ function Hero({
           </h4>
           <div className="space-y-3">
             <p className="text-base uppercase font-bold">Client</p>
-            <Image height={200} width={200} src={logoImg} />
+            <Image alt="" height={200} width={200} src={logoImg} />
           </div>
         </div>
       </div>
