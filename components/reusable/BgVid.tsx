@@ -26,7 +26,7 @@ function BgVid() {
   const handleChange = () => {
     setActiveColor((prev) => {
       const curCol = prev.find((el) => el.isActive);
-      console.log(curCol);
+
       // @ts-ignore
       const curColInd = prev.indexOf(curCol);
       const nextInd = curColInd === 2 ? 0 : curColInd + 1;
@@ -51,7 +51,7 @@ function BgVid() {
     >
       <div className="max-w-7xl mx-auto ">
         <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
-          <h2 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[55%]">
+          <h1 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[55%]">
             Partnering with SMEs, Family Managed Businesses and Startups in{" "}
             driving{" "}
             <span className={`${activeColor.find((el) => el.isActive)?.col}`}>
@@ -62,7 +62,7 @@ function BgVid() {
                 items={["Growth.", "Sustainability.", "Culture."]}
               />
             </span>
-          </h2>
+          </h1>
         </div>
       </div>
     </YoutubeBackground>

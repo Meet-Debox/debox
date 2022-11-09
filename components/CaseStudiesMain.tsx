@@ -10,7 +10,7 @@ function CaseStudiesMain() {
   return (
     <div className="max-w-5xl overflow-auto mx-auto cont !md:pt-28 w-11/12">
       {main.slice(0, 3).map((study, idx) => (
-        <div key={study.title} className={`py-8 `}>
+        <div key={study.title + idx} className={`py-8 `}>
           <div
             className={`flex items-center justify-center flex-col md:flex-row gap-3 lg:gap-8 w-full ${
               idx % 2 === 0 && "md:flex-row-reverse"
