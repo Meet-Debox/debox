@@ -23,6 +23,7 @@ function Hero({
         <Image
           alt={title}
           priority
+          objectFit="cover"
           layout={isDesktop ? "fill" : "intrinsic"}
           height={isDesktop ? undefined : "1800px"}
           width={isDesktop ? undefined : "2000px"}

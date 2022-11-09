@@ -40,6 +40,21 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Partnering with SMEs, Family Managed Businesses and Startups in driving Growth, Culture & Sustainability."
         />
+        <link rel="canonical" href="https://debox.co.in" />
+        {/* Facebook Open Graph Tags */}
+        <meta
+          property="og:title"
+          content="Debox Consulting - Business Consulting Firm"
+        />
+        <meta
+          property="og:description"
+          content="Partnering with SMEs, Family Managed Businesses and Startups in driving Growth, Culture & Sustainability."
+        />
+        {/* <meta
+          property="og:image"
+          content="https://your-website.com/og-image.png"
+        />
+        <meta property="og:url" content="https://your-website.com" /> */}
       </Head>
       {/* Facebook Pixel */}
       <Script
