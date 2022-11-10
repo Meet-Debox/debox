@@ -73,16 +73,14 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
       className="cont mx-auto space-y-10  max-w-5xl w-11/12 py-10 text-center"
     >
       <Toaster />
-      <Heading>Let's work together</Heading>
+      <Heading>{"Let's work together"}</Heading>
       {/* <h2 className="text-3xl mt-2 font-extrabold tracking-tight sm:text-4xl">
         
       </h2> */}
       <p className="my-4 text-sm sm:mt-3 md:text-lg">
-        If not for a business challenge, there is always an opportunity for
-        growth. We have ground-level experience from planning to execution for
-        both across a multitude of industries. Tell us about your problems or
-        let us structure your growth by exploring opportunities - we'll make it
-        happen for you.
+        {
+          "If not for a business challenge, there is always an opportunity for growth. We have ground-level experience from planning to execution for both across a multitude of industries. Tell us about your problems or let us structure your growth by exploring opportunities - we'll make it happen for you."
+        }
       </p>
       <Button
         className="!text-lg"
@@ -96,7 +94,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
       <Modal setOpen={setIsOpen} open={isOpen}>
         <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
           <h2 className="text-3xl my-4 font-extrabold tracking-tight sm:text-4xl">
-            Let's connect.
+            {"Let's connect."}
           </h2>
 
           {/* <p className="my-4 text-sm text-gray-500 sm:mt-3">
