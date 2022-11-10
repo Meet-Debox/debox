@@ -105,9 +105,9 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
           </p> */}
           <form
             ref={form}
-            name="Contact_Form"
+            name="Contact Form"
             data-netlify="true"
-            action={redirectPage + "?submit=true"}
+            action={"/about?submit=true"}
             method="POST"
             className=" grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           >

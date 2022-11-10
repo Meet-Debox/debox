@@ -266,7 +266,8 @@ const About: NextPage = () => {
       {/* Hidden Form for Netlify Detection */}
       <div className="hidden">
         <form
-          name="Contact_Form"
+          action={"/about?submit=true"}
+          name="Contact Form"
           data-netlify="true"
           method="POST"
           className=" grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
@@ -382,46 +383,46 @@ const About: NextPage = () => {
             </div>
           </div>
           <fieldset className="sm:col-span-2">
-            <legend className="block text-sm font-medium text-gray-700">
-              Request Type*
-            </legend>
+            <div className="flex w-full justify-between">
+              <legend className="block text-sm font-medium text-gray-700">
+                Service Requirement
+              </legend>
+              <span className="text-sm text-gray-500">Optional</span>
+            </div>
             <div className="mt-4 grid grid-cols-1 gap-y-4">
-              <div className="flex items-center">
+              <div className="flex items-center gap-3">
                 <input
-                  id="Consulting"
-                  name="RequestType"
-                  defaultValue="Consulting"
-                  type="radio"
+                  name="RequestFor[]"
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                  id={"consulting"}
+                  type="checkbox"
                 />
-                <label htmlFor="Consulting" className="ml-3">
+                <label htmlFor={"consulting"}>
                   <span className="block text-sm text-gray-700">
                     Consulting
                   </span>
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center gap-3">
                 <input
-                  id="Marketing"
-                  name="RequestType"
-                  defaultValue="Marketing"
-                  type="radio"
+                  name="RequestFor[]"
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                  id={"tech"}
+                  type="checkbox"
                 />
-                <label htmlFor="Marketing" className="ml-3">
-                  <span className="block text-sm text-gray-700">Marketing</span>
+                <label htmlFor={"tech"}>
+                  <span className="block text-sm text-gray-700">Tech</span>
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center gap-3">
                 <input
-                  id="Tech"
-                  name="RequestType"
-                  defaultValue="Tech"
-                  type="radio"
+                  name="RequestFor[]"
                   className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                  id={"marketing"}
+                  type="checkbox"
                 />
-                <label htmlFor="Tech" className="ml-3">
-                  <span className="block text-sm text-gray-700">Tech</span>
+                <label htmlFor={"marketing"}>
+                  <span className="block text-sm text-gray-700">Marketing</span>
                 </label>
               </div>
             </div>
