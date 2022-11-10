@@ -7,7 +7,6 @@ import Button from "../components/reusable/Button";
 import toast, { Toaster } from "react-hot-toast";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import TransBtn from "../components/reusable/TransBtn";
 import { useRouter } from "next/dist/client/router";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";

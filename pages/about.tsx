@@ -263,6 +263,182 @@ const About: NextPage = () => {
         </section>
       </section>
       <CTASection redirectPage="about" />
+      {/* Hidden Form for Netlify Detection */}
+      <div className="hidden">
+        <form
+          name="Contact_Form"
+          data-netlify="true"
+          method="POST"
+          className=" grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+        >
+          <input type="hidden" name="form-name" value="Contact_Form" />
+          <div>
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-medium text-gray-700"
+            >
+              First name*
+            </label>
+            <div className="mt-1">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autoComplete="given-name"
+                className="block w-full shadow-lg sm:text-md focus:ring-indigo-500 focus:border-indigo-500 border-black border-2 h-10 px-2 rounded-md"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Last name*
+            </label>
+            <div className="mt-1">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autoComplete="family-name"
+                className="block w-full shadow-lg sm:text-md focus:ring-indigo-500 focus:border-indigo-500 border-black border-2 h-10 px-2 rounded-md"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email*
+            </label>
+            <div className="mt-1">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autoComplete="email"
+                className="block w-full shadow-lg sm:text-md focus:ring-indigo-500 focus:border-indigo-500 border-black border-2 h-10 px-2 rounded-md"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="company"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Company*
+            </label>
+            <div className="mt-1">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                autoComplete="organization"
+                className="block w-full shadow-lg sm:text-md focus:ring-indigo-500 focus:border-indigo-500 border-black border-2 h-10 px-2 rounded-md"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <div className="flex justify-between">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Phone
+              </label>
+              <span id="phone-description" className="text-sm text-gray-500">
+                Optional
+              </span>
+            </div>
+            <div className="mt-1">
+              <input name="phone" type="text" />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <div className="flex justify-between">
+              <label
+                htmlFor="how-can-we-help"
+                className="block text-sm font-medium text-gray-700"
+              >
+                How can we help you?*
+              </label>
+              {/* <span
+                  id="how-can-we-help-description"
+                  className="text-sm text-gray-500"
+                >
+                  Max. 500 characters
+                </span> */}
+            </div>
+            <div className="mt-1">
+              <textarea
+                id="how-can-we-help"
+                name="how-can-we-help"
+                aria-describedby="how-can-we-help-description"
+                rows={4}
+                className="block w-full shadow-lg sm:text-md focus:ring-indigo-500 focus:border-indigo-500 border-2 border-black h-20 px-2 rounded-md"
+              />
+            </div>
+          </div>
+          <fieldset className="sm:col-span-2">
+            <legend className="block text-sm font-medium text-gray-700">
+              Request Type*
+            </legend>
+            <div className="mt-4 grid grid-cols-1 gap-y-4">
+              <div className="flex items-center">
+                <input
+                  id="Consulting"
+                  name="RequestType"
+                  defaultValue="Consulting"
+                  type="radio"
+                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                />
+                <label htmlFor="Consulting" className="ml-3">
+                  <span className="block text-sm text-gray-700">
+                    Consulting
+                  </span>
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  id="Marketing"
+                  name="RequestType"
+                  defaultValue="Marketing"
+                  type="radio"
+                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                />
+                <label htmlFor="Marketing" className="ml-3">
+                  <span className="block text-sm text-gray-700">Marketing</span>
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  id="Tech"
+                  name="RequestType"
+                  defaultValue="Tech"
+                  type="radio"
+                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                />
+                <label htmlFor="Tech" className="ml-3">
+                  <span className="block text-sm text-gray-700">Tech</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div className="text-right sm:col-span-2">
+            <button className="relative inline-block group focus:outline-none focus:ring cursor-pointer w-fit">
+              <span
+                className={`${"px-2 py-2 text-xs sm:px-4 sm:py-2.5 sm:text-sm border-2"}
+        relative inline-block font-bold tracking-widest text-black uppercase border-current group-active:text-opacity-75 duration-200 transition-colors hover:bg-accent hover:text-black `}
+              >
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
