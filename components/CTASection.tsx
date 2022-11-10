@@ -36,7 +36,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
     company: "",
     phone: "",
     remarks: "",
-    reqType: "",
+    reqType: "Consulting",
   });
 
   const form = useRef<null | HTMLFormElement>(null);
@@ -118,7 +118,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                 htmlFor="first-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                First name*
+                First name
               </label>
               <div className="mt-1">
                 <input
@@ -142,7 +142,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                 htmlFor="last-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Last name*
+                Last name
               </label>
               <div className="mt-1">
                 <input
@@ -166,7 +166,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email*
+                Email
               </label>
               <div className="mt-1">
                 <input
@@ -187,7 +187,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                 htmlFor="company"
                 className="block text-sm font-medium text-gray-700"
               >
-                Company*
+                Company
               </label>
               <div className="mt-1">
                 <input
@@ -244,7 +244,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                   htmlFor="how-can-we-help"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  How can we help you?*
+                  How can we help you?
                 </label>
                 {/* <span
                   id="how-can-we-help-description"
@@ -271,66 +271,80 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
               </div>
             </div>
             <fieldset className="sm:col-span-2">
-              <legend className="block text-sm font-medium text-gray-700">
-                Request Type*
+              <legend className="block w-full text-sm font-medium text-gray-700">
+                <div className="flex w-full justify-between">
+                  <span>Services Required</span>
+                  <span className="ml-auto text-sm text-gray-500">
+                    Optional
+                  </span>
+                </div>
               </legend>
               <div className="mt-4 grid grid-cols-1 gap-y-4">
                 <div className="flex items-center">
-                  <input
-                    id="Consulting"
-                    name="RequestType"
-                    defaultValue="Consulting"
-                    type="radio"
-                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                    onChange={(e) => {
-                      setFormData((prev) => ({
-                        ...prev,
-                        reqType: e.target.value,
-                      }));
-                    }}
-                  />
-                  <label htmlFor="Consulting" className="ml-3">
-                    <span className="block text-sm text-gray-700">
-                      Consulting
-                    </span>
+                  <label className="">
+                    <div className="flex items-center gap-2">
+                      <input
+                        name="RequestType[]"
+                        value="Consulting"
+                        type="checkbox"
+                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                        // checked={formData.reqType.includes("Consulting")}
+                        // onChange={(e) => {
+                        //   setFormData((prev) => ({
+                        //     ...prev,
+                        //     reqType: e.target.value,
+                        //   }));
+                        //   console.log(formData.reqType);
+                        // }}
+                      />
+                      <span className="block text-sm text-gray-700">
+                        Consulting
+                      </span>
+                    </div>
                   </label>
                 </div>
                 <div className="flex items-center">
-                  <input
-                    id="Marketing"
-                    name="RequestType"
-                    defaultValue="Marketing"
-                    type="radio"
-                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                    onChange={(e) => {
-                      setFormData((prev) => ({
-                        ...prev,
-                        reqType: e.target.value,
-                      }));
-                    }}
-                  />
-                  <label htmlFor="Marketing" className="ml-3">
-                    <span className="block text-sm text-gray-700">
-                      Marketing
-                    </span>
+                  <label className="">
+                    <div className="flex items-center gap-2">
+                      <input
+                        name="RequestType[]"
+                        value="Marketing"
+                        type="checkbox"
+                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                        // checked={formData.reqType === "Marketing"}
+                        // onChange={(e) => {
+                        //   setFormData((prev) => ({
+                        //     ...prev,
+                        //     reqType: e.target.value,
+                        //   }));
+                        //   console.log(formData.reqType);
+                        // }}
+                      />
+                      <span className="block text-sm text-gray-700">
+                        Marketing
+                      </span>
+                    </div>
                   </label>
                 </div>
                 <div className="flex items-center">
-                  <input
-                    id="Tech"
-                    name="RequestType"
-                    defaultValue="Tech"
-                    type="radio"
-                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                    onChange={(e) => {
-                      setFormData((prev) => ({
-                        ...prev,
-                        reqType: e.target.value,
-                      }));
-                    }}
-                  />
-                  <label htmlFor="Tech" className="ml-3">
-                    <span className="block text-sm text-gray-700">Tech</span>
+                  <label className="">
+                    <div className="flex items-center gap-2">
+                      <input
+                        name="RequestType[]"
+                        value="Tech"
+                        type="checkbox"
+                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
+                        // checked={formData.reqType === "Tech"}
+                        // onChange={(e) => {
+                        //   setFormData((prev) => ({
+                        //     ...prev,
+                        //     reqType: e.target.value,
+                        //   }));
+                        //   console.log(formData.reqType);
+                        // }}
+                      />
+                      <span className="block text-sm text-gray-700">Tech</span>
+                    </div>
                   </label>
                 </div>
               </div>
