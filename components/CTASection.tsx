@@ -47,7 +47,6 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
         !formData.firstName ||
         !formData.lastName ||
         !formData.remarks ||
-        !formData.reqType ||
         !formData.company
       ) {
         toast.error("Please provide all the details!");
