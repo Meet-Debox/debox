@@ -27,6 +27,7 @@ function CaseStudiesMain() {
                     )}
                   >
                     <Image
+                      alt={study.client + " " + "Consulted by Debox"}
                       src={study.side2}
                       width={391}
                       height={385}
@@ -43,7 +44,7 @@ function CaseStudiesMain() {
                       height={674}
                       objectFit="contain"
                       className="w-full h-full object-contain object-center"
-                      alt={study.client + "Consulted by Debox"}
+                      alt={study.client + " " + "Consulted by Debox"}
                       src={
                         study.client === "Kalki"
                           ? study.heroBanner

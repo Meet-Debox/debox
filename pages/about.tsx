@@ -7,10 +7,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 // -- Custom
-import Button from "../components/reusable/Button";
+
 import Heading from "../components/reusable/Heading";
 import Framework from "../components/Framework";
 import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
+import CTASection from "../components/CTASection";
+import { useEffect } from "react";
+
 // -- Libraries
 
 // -- Hooks
@@ -23,6 +26,16 @@ const stats = [
 ];
 
 const About: NextPage = () => {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        // @ts-ignore
+        document?.querySelector(hash).scrollIntoView({ behavior: "smooth" });
+      }, 120);
+    }
+  });
+
   return (
     <div className="font-size mt-[6.4rem]">
       <div className="max-w-5xl mx-auto text-center cont">
@@ -98,6 +111,7 @@ const About: NextPage = () => {
                   alt=""
                 /> */}
                 <Image
+                  alt="Debox Consulting's Office Interior"
                   height={718}
                   width={850}
                   objectFit="cover"
@@ -199,6 +213,7 @@ const About: NextPage = () => {
                 /> */}
                 <Image
                   objectFit="contain"
+                  alt="A team working collaboratively on a project."
                   height={960}
                   width={718}
                   className="h-full w-full absolute inset-0 top-0 left-0"
@@ -234,19 +249,20 @@ const About: NextPage = () => {
         </div>
       </section>
       <section className="bg-light">
-        <section className="cont text-center space-y-10 mx-auto max-w-5xl">
+        <section className="cont text-center space-y-10 mx-auto max-w-5xl w-11/12">
           <Heading>Explore Our Work</Heading>
           <p className="text-sm md:text-lg">
             {"We love working on complex business challenges, see "}
-            <Link href="/case-studies">
-              <span className="bg-darkBlue text-white p-1 cursor-pointer">
+            <Link href="/case-studies" scroll={true}>
+              <span className="bg-accent text-white p-1 cursor-pointer">
                 the problem statements
               </span>
             </Link>
-            {"we’re tackling now or explore some of our recent work."}
+            {" we’re tackling now or explore some of our recent work."}
           </p>
         </section>
       </section>
+      <CTASection redirectPage="about" />
     </div>
   );
 };

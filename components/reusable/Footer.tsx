@@ -32,7 +32,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between px-8 items-center py-8 gap-4 md:gap-10">
           <div className="md:w-1/4 space-y-4">
             <svg
-              className="w-48 h-14 md:w-72 md:h-28 group cursor-pointer mx-auto"
+              className="w-48 h-14 lg:w-72 lg:h-28 group cursor-pointer mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 523.803 120.605"
             >
@@ -148,6 +148,28 @@ function Footer() {
             <div className="md:w-1/2 space-y-4">
               <div className="text-xl font-bold">OUR CONTACT</div>
               <div>
+                <Link href={"/about#Connect"}>
+                  <div className="flex w-fit group items-center gap-2 cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6 group-hover:text-accent duration-200 transition-colors"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                      />
+                    </svg>
+
+                    <span className="group-hover:text-accent duration-200 transition-colors">
+                      Write to Us
+                    </span>
+                  </div>
+                </Link>
                 <p className="md:space-x-4">
                   <span className="">
                     India: <a href="tel:+919920969961">+91 9920969961</a>
@@ -156,10 +178,6 @@ function Footer() {
                     {" "}
                     USA: <a href="tel:+1 404 731 6010">+1 404 731 6010</a>
                   </span>
-                </p>
-                <p>
-                  Email:{" "}
-                  <a href="mailto:darshan@debox.co.in">darshan@debox.co.in</a>
                 </p>
               </div>
             </div>

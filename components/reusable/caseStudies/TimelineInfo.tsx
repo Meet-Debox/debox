@@ -60,6 +60,7 @@ function TimelineInfo({
           alt=""
         /> */}
               <Image
+                alt={projInfo}
                 height={1100}
                 width={952}
                 objectFit="contain"

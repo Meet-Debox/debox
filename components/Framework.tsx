@@ -199,6 +199,7 @@ function Card({
     >
       <div className="relative overflow-hidden  mx-auto">
         <Image
+          alt="Debox Sustainability Framework Image"
           height={400}
           width={500}
           className="w-full h-full"

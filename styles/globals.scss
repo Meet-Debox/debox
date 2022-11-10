@@ -17,6 +17,10 @@ $accent: #04cdec;
   src: url("../public/fonts/altone-trial.regular.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

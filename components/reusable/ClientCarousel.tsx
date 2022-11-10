@@ -44,40 +44,40 @@ import I34 from "../../public/Logo/34.webp";
 import { EffectFade, Navigation, Autoplay } from "swiper";
 
 const clients = [
-  I1,
-  I2,
-  I3,
-  I4,
-  I5,
-  I6,
-  I7,
-  I8,
-  I9,
-  I10,
-  I11,
-  I12,
-  I13,
-  I14,
-  I15,
-  I16,
-  I17,
-  I18,
-  I19,
-  I20,
-  I21,
-  I22,
-  I23,
-  I24,
-  I25,
-  I26,
-  I27,
-  I28,
-  I29,
-  I30,
-  I31,
-  I32,
-  I33,
-  I34,
+  { img: I1, alt: "BDO Global Accounting" },
+  { img: I2, alt: "Best Roadways" },
+  { img: I3, alt: "Billy Manik" },
+  { img: I4, alt: "Boom Online Lottery By Khel Group" },
+  { img: I5, alt: "The CAI Store" },
+  { img: I6, alt: "FoxyMoron" },
+  { img: I7, alt: "Gits" },
+  { img: I8, alt: "Grind Master" },
+  { img: I9, alt: "inRadius" },
+  { img: I10, alt: "Junos Pizza" },
+  { img: I11, alt: "KMG Robust Agro Products" },
+  { img: I12, alt: "Kalki Fashion" },
+  { img: I13, alt: "Kay Kay Embroideries" },
+  { img: I14, alt: "KhelPlay Rummy" },
+  { img: I15, alt: "Landmark Group" },
+  { img: I16, alt: "Lookwell Makeup" },
+  { img: I17, alt: "Mad Over Donuts" },
+  { img: I18, alt: "Naturals Ice Cream" },
+  { img: I19, alt: "Nippo Batteries" },
+  { img: I20, alt: "Novita Healthcare" },
+  { img: I21, alt: "PNG Jewellers" },
+  { img: I22, alt: "Parazelsus Logistics" },
+  { img: I23, alt: "Peakscale" },
+  { img: I24, alt: "Raw Pressery" },
+  { img: I25, alt: "Sanjeev - We Power Solutions" },
+  { img: I26, alt: "Schbang" },
+  { img: I27, alt: "Scorpio" },
+  { img: I28, alt: "Sila Real Estate" },
+  { img: I29, alt: "SnugRest Matresses" },
+  { img: I30, alt: "SoCheers Marketing Agency" },
+  { img: I31, alt: "Social Kinnect Agency" },
+  { img: I32, alt: "Sugal & Damani Lotteries" },
+  { img: I33, alt: "Unwrapped Fashion" },
+  { img: I34, alt: "Kumar's USA Restaurant" },
 ];
 
 function ClientCarousel() {
@@ -121,7 +121,8 @@ function ClientCarousel() {
           >
             <div className="w-40 p-4">
               <Image
-                src={img}
+                src={img.img}
+                alt={img.alt}
                 className="h-full w-full aspect-w-3 aspect-h-1"
               />
             </div>

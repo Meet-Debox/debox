@@ -36,6 +36,7 @@ function Testimonial({ list }: { list: any[] }) {
           <div className="flex items-center justify-center gap-7">
             <div>
               <Image
+                alt={el.by + " Reviewing Debox"}
                 className="rounded-full shadow-md"
                 height={150}
                 width={150}

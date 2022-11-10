@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "@u-wave/react-vimeo": "^0.9.8",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.12",
@@ -24,11 +25,14 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-horizontal-scrolling-menu": "^3.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-phone-input-2": "^2.15.1",
     "react-rotating-text": "^1.4.1",
     "react-youtube-background": "^1.0.0",
     "sass": "^1.55.0",
-    "sharp": "^0.31.1",
     "styled-components": "^5.3.6",
+    "sweetalert2": "^11.6.7",
+    "sweetalert2-react-content": "^5.0.7",
     "swiper": "^8.4.2",
     "tailwindcss": "^3.1.8"
   },
