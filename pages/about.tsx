@@ -262,7 +262,7 @@ const About: NextPage = () => {
           </p>
         </section>
       </section>
-      <CTASection redirectPage="about" />
+      <CTASection redirectPage="/about" />
       {/* Hidden Form for Netlify Detection */}
       <div className="hidden">
         <form
