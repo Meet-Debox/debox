@@ -272,7 +272,7 @@ const About: NextPage = () => {
           method="POST"
           className=" grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
         >
-          <input type="hidden" name="form-name" value="Contact_Form" />
+          <input type="hidden" name="form-name" value="Contact Form" />
           <div>
             <label
               htmlFor="first-name"
@@ -382,51 +382,6 @@ const About: NextPage = () => {
               />
             </div>
           </div>
-          <fieldset className="sm:col-span-2">
-            <div className="flex w-full justify-between">
-              <legend className="block text-sm font-medium text-gray-700">
-                Service Requirement
-              </legend>
-              <span className="text-sm text-gray-500">Optional</span>
-            </div>
-            <div className="mt-4 grid grid-cols-1 gap-y-4">
-              <div className="flex items-center gap-3">
-                <input
-                  name="RequestFor[]"
-                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                  id={"consulting"}
-                  type="checkbox"
-                />
-                <label htmlFor={"consulting"}>
-                  <span className="block text-sm text-gray-700">
-                    Consulting
-                  </span>
-                </label>
-              </div>
-              <div className="flex items-center gap-3">
-                <input
-                  name="RequestFor[]"
-                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                  id={"tech"}
-                  type="checkbox"
-                />
-                <label htmlFor={"tech"}>
-                  <span className="block text-sm text-gray-700">Tech</span>
-                </label>
-              </div>
-              <div className="flex items-center gap-3">
-                <input
-                  name="RequestFor[]"
-                  className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-black border-2 px-2"
-                  id={"marketing"}
-                  type="checkbox"
-                />
-                <label htmlFor={"marketing"}>
-                  <span className="block text-sm text-gray-700">Marketing</span>
-                </label>
-              </div>
-            </div>
-          </fieldset>
 
           <div className="text-right sm:col-span-2">
             <button className="relative inline-block group focus:outline-none focus:ring cursor-pointer w-fit">

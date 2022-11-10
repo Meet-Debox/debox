@@ -111,7 +111,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
             method="POST"
             className=" grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           >
-            <input type="hidden" name="form-name" value="Contact_Form" />
+            <input type="hidden" name="form-name" value="Contact Form" />
             <div>
               <label
                 htmlFor="first-name"
@@ -269,7 +269,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                 />
               </div>
             </div>
-            <fieldset className="sm:col-span-2">
+            {/* <fieldset className="sm:col-span-2">
               <div className="flex w-full justify-between">
                 <legend className="block text-sm font-medium text-gray-700">
                   Service Requirement
@@ -315,7 +315,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
                   </label>
                 </div>
               </div>
-            </fieldset>
+            </fieldset> */}
 
             <div className="text-right sm:col-span-2">
               <button
