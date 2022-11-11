@@ -9,7 +9,7 @@ type ButtonProps = {
 
 function Button({ children, onClick, disabled, className }: ButtonProps) {
   return (
-    <div
+    <button
       onClick={disabled ? () => {} : onClick}
       className="relative inline-block group focus:outline-none focus:ring cursor-pointer w-fit"
     >
@@ -23,7 +23,7 @@ function Button({ children, onClick, disabled, className }: ButtonProps) {
       >
         {children}
       </span>
-    </div>
+    </button>
   );
 }
 
