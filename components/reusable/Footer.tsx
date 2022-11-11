@@ -51,6 +51,7 @@ function Footer() {
 
   return (
     <div className="relative bg-darkBlue">
+      <Toaster />
       <Modal setOpen={setIsOpen} open={isOpen}>
         <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
           <h2 className="text-3xl my-4 font-extrabold tracking-tight sm:text-4xl">

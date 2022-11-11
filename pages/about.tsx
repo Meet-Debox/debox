@@ -266,7 +266,7 @@ const About: NextPage = () => {
       {/* Hidden Form for Netlify Detection */}
       <div className="hidden">
         <form
-          action={"/about?submit=true"}
+          action={"/?submit=true"}
           name="Contact Form"
           data-netlify="true"
           method="POST"
