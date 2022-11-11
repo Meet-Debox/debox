@@ -39,10 +39,10 @@ const resources = [
     title: "Digital Transformation",
     img: I6,
   },
-  {
-    title: "Performance and Sustainability",
-    img: I7,
-  },
+  // {
+  //   title: "Performance and Sustainability",
+  //   img: I7,
+  // },
 ];
 
 function Services() {
