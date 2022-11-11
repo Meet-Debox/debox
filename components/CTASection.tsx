@@ -4,10 +4,11 @@ import { useState, useRef, useEffect } from "react";
 import Heading from "./reusable/Heading";
 // import Button from "./reusable/TransBtn";
 import Button from "../components/reusable/Button";
-import toast, { Toaster } from "react-hot-toast";
+
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useRouter } from "next/dist/client/router";
+import toast, { Toaster } from "react-hot-toast";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
@@ -78,7 +79,7 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
       </h2> */}
       <p className="my-4 text-sm sm:mt-3 md:text-lg">
         {
-          "If not for a business challenge, there is always an opportunity for growth. We have ground-level experience from planning to execution for both across a multitude of industries. Tell us about your problems or let us structure your growth by exploring opportunities - we'll make it happen for you."
+          "Whether you are looking at solving a problem that is slowing down your business growth or are looking at an opportunity that can help your business grow multifold, connect with us and we would love to partner with you on the journey and make it a success."
         }
       </p>
       <Button
@@ -96,13 +97,11 @@ function CTASection({ redirectPage }: { redirectPage?: string }) {
             {"Let's connect."}
           </h2>
 
-          {/* <p className="my-4 text-sm text-gray-500 sm:mt-3">
-            If not for a business challenge, there is always an opportunity for
-            growth. We have ground-level experience from planning to execution
-            for both across a multitude of industries. Tell us about your
-            problems or let us structure your growth by exploring opportunities
-            - we'll make it happen for you.
-          </p> */}
+          <p className="my-4 text-sm text-gray-500 sm:mt-3">
+            {
+              "Whether you are looking at solving a problem that is slowing down your business growth or are looking at an opportunity that can help your business grow multifold, connect with us and we would love to partner with you on the journey and make it a success."
+            }
+          </p>
           <form
             ref={form}
             name="Contact Form"

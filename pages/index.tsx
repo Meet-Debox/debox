@@ -5,17 +5,34 @@ import Image from "next/image";
 import Hero from "../components/Hero";
 import Description from "../components/Description";
 import CaseStudiesMain from "../components/CaseStudiesMain";
-
+import { useRouter } from "next/router";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 import Button from "../components/reusable/Button";
 import SurveyCTAStrip from "../components/reusable/SurveyCTAStrip";
 import ClientCarousel from "../components/reusable/ClientCarousel";
 import Arrow1 from "../components/reusable/icons/Arrow1";
 import FooterBlob from "../components/reusable/FooterBlob";
 
+const MySwal = withReactContent(Swal);
 // import hero from '../public/hero-vid.mp4'
 
 const Home: NextPage = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const router = useRouter();
+  const query = router.query;
+
+  useEffect(() => {
+    if (query && query.submit === "true") {
+      MySwal.fire({
+        icon: "success",
+        titleText: "Success",
+        text: "Thank you for submitting an enquiry. We'll get back to you as soon as possible.",
+        timer: 3500,
+        showConfirmButton: false,
+      });
+    }
+  }, [query]);
 
   useEffect(() => {
     setTimeout(() => {
