@@ -17,8 +17,9 @@ import FooterBlob from "../components/reusable/FooterBlob";
 const MySwal = withReactContent(Swal);
 // import hero from '../public/hero-vid.mp4'
 
+import { motion } from "framer-motion";
+
 const Home: NextPage = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const router = useRouter();
   const query = router.query;
 
@@ -34,28 +35,24 @@ const Home: NextPage = () => {
     }
   }, [query]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current?.play();
-    }, 5000);
-  }, []);
-
   return (
-    <div className="overflow-hidden">
-      {/* <div className="h-screen " /> */}
-      <Hero />
-      <div className="bg-white z-20">
-        <Description />
+    <motion.div key={"index"} exit={{}}>
+      <div className="overflow-hidden">
+        {/* <div className="h-screen " /> */}
+        <Hero />
+        <div className="bg-white z-20">
+          <Description />
+        </div>
+        {/* Case Studies */}
+        <div className="bg-light relative">
+          <Arrow1 className="absolute left-[75%] h-24 w-20 -mt-11 z-10" />
+          <CaseStudiesMain />
+        </div>
+        <SurveyCTAStrip isDark />
+        <ClientCarousel />
+        {/* <FooterBlob /> */}
       </div>
-      {/* Case Studies */}
-      <div className="bg-light relative">
-        <Arrow1 className="absolute left-[75%] h-24 w-20 -mt-11 z-10" />
-        <CaseStudiesMain />
-      </div>
-      <SurveyCTAStrip isDark />
-      <ClientCarousel />
-      {/* <FooterBlob /> */}
-    </div>
+    </motion.div>
   );
 };
 

@@ -13,6 +13,7 @@ import WorkDone from "../../components/reusable/caseStudies/WorkDone";
 import Testimonial from "../../components/reusable/caseStudies/Testimonial";
 import MoreStudies from "../../components/reusable/caseStudies/MoreStudies";
 import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
+import { motion } from "framer-motion";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -38,7 +39,7 @@ function CAI() {
   }, []);
 
   return (
-    <div className="">
+    <motion.div key={"CAI"} exit={{ opacity: 0 }} className="">
       <HeadHTML title={post.title} />
       <Hero
         bannerImg={post.heroBanner}
@@ -86,7 +87,7 @@ function CAI() {
       {/* More Posts*/}
 
       <MoreStudies title={post.title} />
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,10 +1,13 @@
-import React from "react";
 const ReactRotatingText = require("react-rotating-text");
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 // @ts-ignore
 import YoutubeBackground from "react-youtube-background";
+// GSAP
+import gsap, { Power4 } from "gsap";
 
 function BgVid() {
+  const textEl = useRef<HTMLHeadingElement | null>(null);
+
   const [activeColor, setActiveColor] = useState([
     {
       name: "Growth",
@@ -42,16 +45,31 @@ function BgVid() {
     });
   };
 
+  useEffect(() => {
+    if (textEl.current !== null) {
+      // textEl.current.style.display = "none";
+      gsap.to(textEl.current, {
+        opacity: 1,
+        translateX: 0,
+        ease: Power4.easeIn,
+        delay: 0.2,
+      });
+    }
+  }, []);
+
   return (
     // <div className="z-[-1] absolute top-0 left-0  overflow-hidden bg-white/40">
     //   <div className="max-w-[99.6vw] overflow-clip">
     <YoutubeBackground
-      className="h-screen w-screen absolute top-0 left-0 -z-50 overflow-x-hidden"
+      className="h-screen w-screen absolute top-0 left-0 -z-50 overflow-x-hidden bg-black"
       videoId={"PL73i1KfQp8"}
     >
       <div className="max-w-7xl mx-auto ">
         <div className="z-10 h-screen mx-auto flex items-center w-[95%]">
-          <h1 className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[55%]">
+          <h1
+            ref={textEl}
+            className="font-bold font-heading text-xl  md:text-4xl text-white md:w-[55%] opacity-0 -translate-x-10"
+          >
             Partnering with SMEs, Family Managed Businesses and Startups in{" "}
             driving{" "}
             <span className={`${activeColor.find((el) => el.isActive)?.col}`}>

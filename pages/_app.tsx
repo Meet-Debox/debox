@@ -9,6 +9,8 @@ import Script from "next/script";
 import * as fbq from "../lib/fpixel";
 import { useRouter } from "next/router";
 
+import { AnimatePresence, motion } from "framer-motion";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
@@ -115,7 +117,37 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
         </noscript>
       </Script>
-      <Component {...pageProps} />
+      <AnimatePresence mode="wait">
+        {/* clip-path: polygon(0 0, 100% 0, 100% 100%, 88% 12%);
+         */}
+        {/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         */}
+        <motion.div
+          initial="initialState"
+          animate="animateState"
+          exit="exitState"
+          key={router.route}
+          transition={{
+            duration: 0.75,
+          }}
+          variants={{
+            initialState: {
+              opacity: 0,
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            },
+            animateState: {
+              opacity: 1,
+              clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+            },
+            exitState: {
+              opacity: 0,
+              clipPath: "polygon(50% 0,50% 0, 50% 100%, 50% 100%)",
+            },
+          }}
+        >
+          <Component {...pageProps} />
+        </motion.div>
+      </AnimatePresence>
     </Layout>
   );
 }
