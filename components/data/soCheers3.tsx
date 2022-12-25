@@ -44,7 +44,7 @@ const workDone = [
 const soCheers3 = {
   client: "SoCheers",
   headTitle:
-    "How Debox helped a fast-growing Digital Media manage performance review.",
+    "How Debox helped a fast-growing Digital Media manage performance reviews.",
   logo: logo,
   heroBanner:
     "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Hero_Banner_paicad.webp",
@@ -57,7 +57,7 @@ const soCheers3 = {
   slug: "helping-socheers-automate-performance-reviews",
   route: `/case-studies/helping-socheers-automate-performance-reviews`,
   title:
-    "How we helped a fast-growing Digital Media agency derive profitability per team, per project and per service/output",
+    "How we helped a fast-growing Digital Media manage performance reviews effeciently by designing a custom review platform to suit their needs.",
 
   industry: "Marketing",
   tags: ["Tech"],
@@ -85,7 +85,7 @@ const soCheers3 = {
     "Being part of a fast-growing industry, the management team (Rajni Daswani, Mehul Gupta and Siddharth Devnani) wanted to build strong People practices that would help drive retention, development and growth of their people.",
   timeline: "October 2019 - Present",
   projInfo:
-    "How we helped a fast-growing Digital Media agency derive profitability per team, per project and per service/output",
+    "How we helped a fast-growing Digital Media manage performance reviews effeciently by designing a custom review platform to suit their needs.",
   approachList: [
     {
       title: "Team interactions to identify areas of improvement",
