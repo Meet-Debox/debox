@@ -16,7 +16,7 @@ import SurveyCTAStrip from "../../components/reusable/SurveyCTAStrip";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-export default function soCheers3() {
+export default function SoCheers3() {
   const post = data;
 
   const imgArray: Array<any> = [useRef(null), useRef(null)];
