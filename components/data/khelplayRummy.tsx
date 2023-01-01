@@ -40,11 +40,12 @@ const Khel = {
   heroBanner:
     "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Hero_Banner_paicad.webp",
   side1:
-    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Side1_jsp3ye.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Khel/Side2_lp1ot6.webp",
+
   break1: "khelplay-breakImg-1",
   break2: "khelplay-breakImg-2",
   side2:
-    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Khel/Side2_lp1ot6.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Side1_jsp3ye.webp",
   slug: "helping-khel-with-user-onboarding-and-retention",
   route: `/case-studies/helping-khel-with-user-onboarding-and-retention`,
   title:

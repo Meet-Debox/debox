@@ -89,12 +89,12 @@ const soCheers1 = {
     "https://res.cloudinary.com/debox/image/upload/v1672455689/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/brave_4TExjwVnP1_l26kq8.png",
   // about
   side1:
-    "https://res.cloudinary.com/debox/image/upload/v1666336183/Debox-New/studies/BayOwl/Side1_yq2pmt.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1672584788/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/about_common_xeioat.webp",
   break1: "so-cheers-1",
   break2: "so-cheers-2",
   // timeline / title
   side2:
-    "https://res.cloudinary.com/debox/image/upload/v1672455981/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/1659977114870_zdvbnx.jpg",
+    "https://res.cloudinary.com/debox/image/upload/v1672585716/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/1659977114870_zdvbnx_qgmd1o.webp",
   headTitle: "Helping SoCheers build a thriving culture - Debox Consulting",
   slug: "helping-socheers-build-culture",
   route: `/case-studies/helping-socheers-build-culture`,

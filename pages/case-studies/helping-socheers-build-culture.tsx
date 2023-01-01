@@ -18,7 +18,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import soCheers1 from "../../components/data/soCheers1";
 
-function soCheersP1() {
+function SoCheersP1() {
   const post = soCheers1;
 
   const imgArray: Array<any> = [useRef(null), useRef(null)];
@@ -93,4 +93,4 @@ function soCheersP1() {
   );
 }
 
-export default soCheersP1;
+export default SoCheersP1;
