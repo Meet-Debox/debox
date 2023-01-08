@@ -39,7 +39,7 @@ function CaseCard({
                 className="w-full h-full z-10"
                 alt={client}
                 objectFit="contain"
-                src={client === "Kalki" ? bannerImg : img1}
+                src={client === "Kalki" ? bannerImg : img2}
               />
             </div>
             <div
@@ -51,7 +51,7 @@ function CaseCard({
                 alt={client}
                 height={250}
                 width={350}
-                src={client === "KhelPlay Rummy" ? bannerImg : img2}
+                src={client === "KhelPlay Rummy" ? bannerImg : img1}
               />
             </div>
           </div>
