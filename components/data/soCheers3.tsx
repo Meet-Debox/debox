@@ -45,15 +45,15 @@ const soCheers3 = {
   client: "SoCheers",
   headTitle:
     "How Debox helped a fast-growing Digital Media manage performance reviews.",
-  logo: logo,
+  logo: "https://res.cloudinary.com/debox/image/upload/v1666336193/Debox-New/Logo/30_ao1muj.webp",
   heroBanner:
-    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Hero_Banner_paicad.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1673158754/Debox%20/studies/SoCheers%20-%203%20-%20Performance%20Reviews/perf-hero_vi2bco.webp",
   side1:
     "https://res.cloudinary.com/debox/image/upload/v1672584788/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/about_common_xeioat.webp",
   break1: "so-cheers-1",
-  break2: "khelplay-breakImg-2",
+  break2: "so-cheers-c3-2",
   side2:
-    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Khel/Side2_lp1ot6.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1673159898/Debox%20/studies/SoCheers%20-%203%20-%20Performance%20Reviews/Screenshot_20230108_120729_krvqni.png",
   slug: "helping-socheers-automate-performance-reviews",
   route: `/case-studies/helping-socheers-automate-performance-reviews`,
   title:

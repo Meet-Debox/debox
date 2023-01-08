@@ -33,15 +33,15 @@ const soCheers2 = {
   client: "SoCheers",
   headTitle:
     "How Debox helped a fast-growing Digital Media dervive profitability and outputs.",
-  logo: logo,
+  logo: "https://res.cloudinary.com/debox/image/upload/v1666336193/Debox-New/Logo/30_ao1muj.webp",
   heroBanner:
-    "https://res.cloudinary.com/debox/image/upload/v1666336188/Debox-New/studies/Khel/Hero_Banner_paicad.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1673157923/Debox%20/studies/SoCheers%20-%202%20-%20Profitability%2C%20Outputs/awards_bro6hx.webp",
   side1:
     "https://res.cloudinary.com/debox/image/upload/v1672584788/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/about_common_xeioat.webp",
   break1: "so-cheers-1",
-  break2: "khelplay-breakImg-2",
+  break2: "so-cheers-2",
   side2:
-    "https://res.cloudinary.com/debox/image/upload/v1666336189/Debox-New/studies/Khel/Side2_lp1ot6.webp",
+    "https://res.cloudinary.com/debox/image/upload/v1673158107/Debox%20/studies/SoCheers%20-%202%20-%20Profitability%2C%20Outputs/profitability-projectinfo_y9iwfc.webp",
   slug: "helping-socheers-derive-profitability-and-outputs",
   route: `/case-studies/helping-socheers-derive-profitability-and-outputs`,
   title:

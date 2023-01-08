@@ -86,7 +86,7 @@ const soCheers1 = {
   client: "SoCheers",
   logo: "https://res.cloudinary.com/debox/image/upload/v1666336193/Debox-New/Logo/30_ao1muj.webp",
   heroBanner:
-    "https://res.cloudinary.com/debox/image/upload/v1672455689/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/brave_4TExjwVnP1_l26kq8.png",
+    "https://res.cloudinary.com/debox/image/upload/v1673015318/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/preview_oe2qoz.webp",
   // about
   side1:
     "https://res.cloudinary.com/debox/image/upload/v1672584788/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/about_common_xeioat.webp",
