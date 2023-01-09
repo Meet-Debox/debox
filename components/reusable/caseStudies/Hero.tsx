@@ -31,7 +31,7 @@ function Hero({
         />
       </div>
       <div className="max-w-7xl mx-auto grid place-items-center w-10/12">
-        <div className="font-size pt-8 max-w-2xl z-10 bg-white md:px-20 -mt-60 mx-auto text-center pb-8 md:pb-20">
+        <div className="font-size pt-8 max-w-2xl z-10 bg-white md:px-20 -mt-60 mx-auto text-center pb-8 ">
           <TransBtn size="sm">{industry}</TransBtn>
           <h4 className="font-heading font-bold mt-8 mb-8 text-xl md:text-3xl">
             {title}
