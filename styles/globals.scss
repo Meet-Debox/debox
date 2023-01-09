@@ -525,7 +525,10 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
 
 .so-cheers-2 {
   background-image: url("https://res.cloudinary.com/debox/image/upload/v1673015316/Debox%20/studies/SoCheers%20-%201%20-%20Culture%2C%20People%20Practices/AgencyOfTheYear_pqwcuk.webp");
-  background-position: 50% 40%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  // background-position: 20% 20%;
+  // background-position: 50% 40%;
 }
 .so-cheers-c3-2 {
   background-image: url("https://res.cloudinary.com/debox/image/upload/v1673158780/Debox%20/studies/SoCheers%20-%203%20-%20Performance%20Reviews/perf-break2_qmr3sb.webp");
