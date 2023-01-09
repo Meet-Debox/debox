@@ -70,7 +70,7 @@ const soCheers2 = {
     );
   },
   problem:
-    "HR managers spend hundreds of hours in the Performance Review processes every year and a lot of this time goes into unproductive coordination and follow-ups. The company was exploring HR platforms and tools to drive Performance Management and Reviews but were not able to find a suitable one that can customise the platform to suit their needs and future requirements.",
+    "Being part of a fast-growing industry, the management team (Rajni Daswani, Mehul Gupta and Siddharth Devnani) wanted to build strong People practices that would help drive retention, development and growth of their people.",
   timeline: "October 2019 - Present",
   projInfo:
     "How we helped a fast-growing Digital Media agency derive profitability per team, per project and per service/output",
@@ -96,7 +96,7 @@ const soCheers2 = {
       <div className="space-y-4">
         <p>
           {
-            "Our approach was to build a self-serving central platform which is used across levels to manage the entire review cycle and also give data as needed to different user sets. "
+            "Our approach was to build the business accumen in a manner which helps them understand the outcome and input both to enable them to control the outcome. "
           }
         </p>
         <p>{"Our platform could - "}</p>
@@ -109,7 +109,7 @@ const soCheers2 = {
         <div className="">
           <div className="max-w-5xl mx-auto cont -mt-8 w-10/12">
             <h4 className="text-center pb-8 font-bold text-xl md:text-3xl">
-              How we delivered the project:
+              We delivered the project the following during the project:
             </h4>
 
             <ul className="flex flex-col gap-10 overflow-hidden mb-8 ">

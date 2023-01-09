@@ -4,41 +4,27 @@ import clsx from "clsx";
 // Icons
 import FrameworkCard from "../reusable/FrameworkCard";
 import DigitalFramework from "../reusable/icons/DigitalFramework";
-import ObjectiveFramework from "../reusable/icons/ObjectiveFramework";
 
 const frameworkList = [
-  {
-    title: "Objective & Value Setting Framework",
-    icon: () => <ObjectiveFramework />,
-    content() {
-      return (
-        <ul>
-          <li>- Strategic Direction</li>
-          <li>- Profitability Mapping & Comparison</li>
-        </ul>
-      );
-    },
-  },
   {
     title: "Digital Transformation Framework",
     icon: () => <DigitalFramework />,
     content() {
       return (
         <ul>
-          <li>- Data Automation</li>
+          <li>- Custom Tech Platforms</li>
+          <li>- Process Digitization</li>
         </ul>
       );
     },
   },
 ];
-
 const workDone = [
-  "Created parity at a skill level to map the outcome of various skills required in the service/department to compare efficiency of different team members having different skill sets at the same level. Example - In the design team, a designer works on statics and print designs whereas other designer works on videos, how can the output be compared on the same scale.",
-  "Set internal billing rates for services based on the value of services to create standardisation across different clients and teams.",
-  "Initiated a process to collect data of work done by each team member.",
-  "Automated the efficiency comparison at a cluster and team level based on the data collected. ",
-  "The data would also compare the internal billing with the team costs and highlight the profitability at a cluster & team level.",
-  "Mapped internal billing to client billing to understand client level profitability and to compare scope of work planned v/s actuals to improve monetisation for additional deliveries.",
+  "Allow the reviewee to self submit the performance data based on the review cycle set. This data can be verified / edited by the manager and the manager could add his feedback on the performance at a KPI or overall level.",
+  "Once a review is updated by the manager, the manager's manager can approve the review. Anyone other than the reviewee, manager and manager's manager cannot change or approve the data.",
+  "The HR team can start and stop the review cycle and also control the employees who will be able to participate in the cycle based on their joining / exit date.",
+  "The HR team can also track the status of reviews for each employee and send follow-up emails from the portal itself without having to move to any other platform.",
+  "Each user set viz. employee, manager, manager's manager, HR and management have their respective dashboard to showcase relevant insights. The data can be further filtered for a particular review period to quickly understand a snapshot of the performance.",
 ];
 
 const soCheers3 = {
@@ -108,10 +94,10 @@ const soCheers3 = {
       <div className="space-y-4">
         <p>
           {
-            "Our approach was to build the business accumen in a manner which helps them understand the outcome and input both to enable them to control the outcome."
+            "Our approach was to build a self-serving central platform which is used across levels to manage the entire review cycle and also give data as needed to different user sets."
           }
         </p>
-        <p>{" We delivered the following during the project:"}</p>
+        <p>{"Our platform could -"}</p>
       </div>
     );
   },
@@ -121,7 +107,7 @@ const soCheers3 = {
         <div className="">
           <div className="max-w-5xl mx-auto cont -mt-8 w-10/12">
             <h4 className="text-center pb-8 font-bold text-xl md:text-3xl">
-              How we delivered the project:
+              Our platform could -
             </h4>
 
             <ul className="flex flex-col gap-10 overflow-hidden mb-8 ">
@@ -167,7 +153,7 @@ const soCheers3 = {
       <div className="space-y-4">
         <p>
           {
-            "SoCheers has been able to efficiently and profitably grow the team sizes to upto 90 people from the earlier average of 15 people. Most of their team members are profitable within the first 90 days of joining and managers are able to clearly identify and fix efficiency gaps. They were able to solve for efficiency gaps with structured feedback mechanisms and deeply integrated performance management system."
+            "The HR team could save 100+ hours in every review cycle in followup, data consolidation, follow-ups and managing reviews. Other team heads could save 45+ hours for each review cycle spent usually on data consolidation for the team, referring to past data, managing different excel sheets and emailing feedback to team members. The team size at SoCheers has grown 2x since then and the savings in efforts and time have only increased since then."
           }
         </p>
       </div>
